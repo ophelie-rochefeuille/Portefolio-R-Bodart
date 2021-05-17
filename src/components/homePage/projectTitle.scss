@@ -1,0 +1,149 @@
+@import "../fonts.scss";
+@import "../buttons.scss";
+
+.containerRectangle {
+  width: 552px;
+  height: 336px;
+  margin: 40px;
+  display: flex;
+}
+
+.red-rectangle {
+  background-color: rgba(234, 42, 64, 0.32);
+  position: absolute;
+  width: 536px;
+  height: 320px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.blue-rectangle {
+  background-color: rgba(53, 108, 255, 0.32);
+  position: absolute;
+  width: 536px;
+  height: 320px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.conteiner-div {
+  max-width: 552px;
+  max-height: 336px;
+}
+
+.img {
+  z-index: 1;
+}
+
+.container-project-one {
+  margin-top: 65px;
+  margin-left: 40px;
+  display: flex;
+}
+
+.title-project-text {
+  margin-right: 135px;
+  margin-left: 40px;
+  margin-top: 70px;
+  h1 {
+    @extend %title-bold;
+  }
+}
+
+.button-see-more {
+  @extend %button-base, %button-blue-white;
+
+  margin-top: 30px;
+}
+
+.container-button-see-more {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.two {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 40px;
+}
+
+.title-project-text-two {
+  margin-right: 24px;
+  margin-left: 152px;
+  margin-top: 70px;
+  h1 {
+    @extend %title-bold;
+  }
+}
+
+.img-two {
+  margin-left: 20px;
+}
+
+.blue-rectangle-two {
+  background-color: rgba(53, 108, 255, 0.32);
+  position: absolute;
+  width: 536px;
+  height: 320px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 500px) {
+  img {
+    width: 328px;
+    height: 200px;
+  }
+  .containerRectangle {
+    height: min-content;
+    max-width: 100%;
+    margin: 40px 0px 0px 20px;
+  }
+  .container-project-one {
+    margin: 0;
+    display: block;
+  }
+  .red-rectangle {
+    background-color: rgba(234, 42, 64, 0.32);
+    position: absolute;
+    width: 328px;
+    height: 200px;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 8px;
+  }
+  .blue-rectangle {
+    background-color: rgba(53, 108, 255, 0.32);
+    position: absolute;
+    width: 328px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  .title-project-text {
+    margin: 16px;
+  }
+  .blue-rectangle-two {
+    width: 328px;
+    height: 200px;
+  }
+  .title-project-text-two {
+    margin: 16px;
+  }
+  .container-button-see-more {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .red-rectangle-two {
+    margin-left: 15px;
+  }
+  .blue-rectangle-two {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}

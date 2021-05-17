@@ -1,0 +1,89 @@
+@import "../fonts.scss";
+@import "../buttons.scss";
+
+.main-container-contact{
+    background-color: #f8faff;
+
+}
+
+.main-title-contact {
+    font-size: 40px;
+}
+
+.name-label {
+    font-family: $font-bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.paraph-contact {
+    font-family: $font-paragraph;
+    font-size: 16px;
+    color: #2a2a2a;
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+.div-secondary-container-contact{
+    width: 928px;
+    height: 925px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 225px;
+
+}
+
+.div-container-email-subject{
+    display: flex;
+}
+
+.div-email, 
+.div-subject-title{
+    width: 50%;
+}
+
+.div-input-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-contact {
+    margin: 0;
+}
+
+.object-input {
+    height: 120px;
+    background-color: #f8faff;
+    border: solid 1px #9aa3bc;
+    border-radius: 8px;
+    font-family: $font-paragraph;
+    outline: none;
+}
+
+.subject-input,
+.email-input {
+    height: 40px;
+    background-color: #f8faff;
+    border: solid 1px #9aa3bc;
+    border-radius: 8px;
+}
+.email-input{
+    margin-right: 16px;
+}
+.div-object-text{
+    margin-top: 16px;
+}
+
+.div-button-send{
+    display: flex;
+    justify-content: flex-end;
+}
+.button-send{
+    margin-top: 32px;
+    @extend %button-base;
+    font-family: $font-bold;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #356cff;
+    border: solid 2px #356cff;
+    border-radius: 8px;
+}

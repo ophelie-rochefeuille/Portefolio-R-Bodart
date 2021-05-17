@@ -1,0 +1,28 @@
+@import "../fonts.scss";
+
+footer {
+  min-width: 100%;
+}
+
+.footer-base {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-made {
+  font-family: $font-light;
+  font-size: 14px;
+}
+
+.social-network-logo {
+  width: 18px;
+  height: 18px;
+  margin: 16px;
+  padding: 4px;
+  background-color: #f8faff;
+  &:hover {
+    cursor: pointer;
+  }
+}

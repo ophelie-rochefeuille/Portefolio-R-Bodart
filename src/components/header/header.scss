@@ -1,0 +1,43 @@
+@import "variablesHeader";
+@import "../fonts";
+
+.principal-div-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 25px;
+  .inferior-div-header {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+li {
+  list-style: none;
+}
+a {
+  @extend %title-bold;
+  text-decoration: none;
+  font-size: $font-menu-size;
+  &:hover {
+    color: $font-menu-color-hover;
+  }
+}
+
+.active-link {
+  color: $font-menu-color-hover;
+}
+
+@media (max-width: 500px) {
+  .menu-pc {
+    display: none;
+  }
+  .principal-div-header {
+    margin: 16px 25px 16px 32px;
+  }
+}
+
+@media (min-width: 501px) {
+  .button-burger-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,75 @@
+@import '../fonts.scss';
+
+.background-div-about{
+    background-color: #f8faff;
+}
+.container-about-hi {
+    height: 600px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodartpng {
+    width: 328px;
+    height: 328px;
+}
+
+.div-presentation-about{
+    margin-left: 32px;
+}
+
+.name-h1-about{
+    font-size: 40px;
+}
+
+.presentation-about{
+    font-family: $font-paragraph;
+    font-size: 16px;
+}
+
+.div-hobbies{
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 80px;
+}
+
+.hobbies-img{
+    width: 536px;
+    height: 320px;
+}
+
+.paragraph-second-presentation-about{
+    text-align: center;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    font-family: $font-paragraph;
+    font-size: 18px;
+}
+
+.h1-paraph-hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 56px;
+    margin-right: 126px;
+    h1 {
+        font-size: 32px;
+    }
+    p{
+        font-family: $font-paragraph;
+        font-size: 20px;
+    }
+}
+
+.hobbies-list {
+    font-size: 20px;
+    font-family: $font-paragraph;
+    list-style-type: disc;
+}

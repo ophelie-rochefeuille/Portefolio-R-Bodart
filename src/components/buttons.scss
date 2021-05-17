@@ -1,0 +1,30 @@
+%button-base {
+  padding: 8px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    transition-property: all;
+    transition-duration: 0.3s;
+  }
+}
+
+%button-red-white {
+  border: solid 2px #ea2a40;
+  color: #ea2a40;
+  background-color: #f8faff;
+  &:hover {
+    background-color: #ea2a40;
+    color: #ffffff;
+  }
+}
+
+%button-blue-white {
+  border: solid 2px #356cff;
+  color: #356cff;
+  background-color: #ffffff;
+  &:hover {
+    background-color: #356cff;
+    color: #ffffff;
+  }
+}

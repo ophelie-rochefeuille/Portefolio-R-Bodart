@@ -1,0 +1,22 @@
+.burger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 36px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+}
+
+.burger-button-line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border-radius: 3px;
+}

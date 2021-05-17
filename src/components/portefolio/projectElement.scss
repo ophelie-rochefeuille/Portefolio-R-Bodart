@@ -1,0 +1,38 @@
+@import "../fonts.scss";
+
+$color-font-company: #ea2a40;
+
+.img-porteflio {
+  width: 448px;
+  height: 280px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.container-project-portefolio {
+  margin: 18px;
+  height: 388px;
+  box-shadow: 0 4px 8px 2px rgba(53, 108, 255, 0.05);
+  border-radius: 16px;
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+  }
+}
+
+.container-project-details-porteflio {
+  margin-left: 24px;
+}
+
+.title-project-portefoliolist {
+  font-size: 24px;
+}
+
+.name-company {
+  font-family: $font-paragraph;
+  color: $color-font-company;
+}
+
+.name-category {
+  font-family: $font-paragraph;
+  color: #2a2a2a;
+}
