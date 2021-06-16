@@ -4,14 +4,11 @@
 $color-font-company: #ea2a40;
 
 .img-porteflio {
-  width: 448px;
-  height: 280px;
+  width: 100%;
   border-radius: 16px 16px 0px 0px;
 }
-
 .container-project-portefolio {
   margin: 18px;
-  height: 388px;
   box-shadow: 0 4px 8px 2px rgba(53, 108, 255, 0.05);
   border-radius: 16px;
   &:hover {

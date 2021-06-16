@@ -1,5 +1,6 @@
 @import "../fonts.scss";
 @import "../variables.scss";
+@import "./projectElement.scss";
 
 .main-container-portefolioList {
   max-width: $max-width;
@@ -32,6 +33,12 @@
 .main-container-portefoliolist-project{
   @include grid-lg;
   display: grid;
+  max-width: $max-width;
+}
+
+.a-project-element{
+  grid-column: span 4;
+  width: 100%;
 }
 
 .portefolio-title-portefolioList {
