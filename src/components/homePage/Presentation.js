@@ -2,6 +2,7 @@ import React , { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import pictureBodart from './bitmap.jpg';
 import './presentation.scss';
+import './presentationMobile.scss';
 
 
 export default class Presentation extends Component {
@@ -11,7 +12,7 @@ export default class Presentation extends Component {
          <div className="container-principal-presentation-profil">
              
              <div className="secondary-container-presentation-profil">
-                 <div>
+                 <div className='picture-bodart-div'>
                  <img className='picture-bodart' alt="Raphaël Bodart" src={pictureBodart} />  
                  </div>
           <div className="container-text-presentation-profil">

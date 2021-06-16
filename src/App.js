@@ -35,12 +35,13 @@ render () {
   return (
     <Router>
  <div className="App">
+
       <header className="App-header">
         <Header drawerClickHandler={this.drawerToggleClickHandler} />
         {sideDrawer}
         {backdrop}
         </header>
-        <div>
+        <div className='main-wrapper'>
           <Switch>
         <Route path="/homePage" component={HomePage} />
         <Route path="/portefolio" exact component={PortefolioList} />

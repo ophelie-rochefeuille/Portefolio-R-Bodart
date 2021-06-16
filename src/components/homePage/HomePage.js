@@ -3,6 +3,7 @@ import Presentation from './Presentation';
 import ProjectTitle from './ProjectTitle';
 import Skills from './Skills';
 import Footer from '../footer/Footer';
+import '../../components/variables.scss';
 
 
 export default class HomePage extends React.Component {

@@ -24,8 +24,8 @@ export default class PortefolioList extends Component {
             <div>
 <div className='main-container-portefolioList'>
                 <div className='div-container-img-h-p'>
-                <div >
-                    <img className='div-portefolio-img' alt='portefolio image' src={portefolioimg} />
+                <div className="div-portefolio-img">
+                    <img className='portefolio-img' alt='portefolio image' src={portefolioimg} />
                 </div>
                 <div className='div-h-p-portefolioList'>
                     <h1 className='portefolio-title-portefolioList'>Portefolio</h1>

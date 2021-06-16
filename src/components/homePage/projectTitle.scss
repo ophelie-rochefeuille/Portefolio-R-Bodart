@@ -1,61 +1,52 @@
 @import "../fonts.scss";
 @import "../buttons.scss";
+@import '../variables.scss';
 
-.containerRectangle {
-  width: 552px;
-  height: 336px;
-  margin: 40px;
-  display: flex;
+.container-project{
+  @include grid-lg;
+  display: grid;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
-.red-rectangle {
-  background-color: rgba(234, 42, 64, 0.32);
-  position: absolute;
-  width: 536px;
-  height: 320px;
-  margin-left: 10px;
-  margin-top: 10px;
-  border-radius: 8px;
-}
+// project one, grids & marges div-box-one
 
-.blue-rectangle {
-  background-color: rgba(53, 108, 255, 0.32);
-  position: absolute;
-  width: 536px;
-  height: 320px;
-  margin-left: 20px;
-  margin-top: 20px;
-  border-radius: 8px;
-}
-
-.conteiner-div {
-  max-width: 552px;
-  max-height: 336px;
-}
-
-.img {
-  z-index: 1;
-}
-
-.container-project-one {
-  margin-top: 65px;
+.container-box{
   margin-left: 40px;
-  display: flex;
+  grid-column: 1/span 5;
+
 }
+
+.picture-project{
+  width: 100%;
+}
+
+
+
+// marges & grids project-explications-one 
+.title-project-text{
+  margin-left: 40px;
+  grid-column: 6/ span 6;
+  width: 100%;
+}
+
 
 .title-project-text {
   margin-right: 135px;
   margin-left: 40px;
-  margin-top: 70px;
   h1 {
     @extend %title-bold;
   }
 }
 
+.paraph-project-one{
+  margin: 0px;
+}
 .button-see-more {
-  @extend %button-base, %button-blue-white;
-
-  margin-top: 30px;
+  @extend %button-base, 
+  %button-blue-white;
+  margin-top: 0px;
 }
 
 .container-button-see-more {
@@ -63,34 +54,20 @@
   justify-content: flex-end;
 }
 
-.two {
-  display: flex;
-  flex-direction: row-reverse;
+
+// project two, grids & marges div-box-two 
+
+.container-box-two{
+  grid-column: 8/ span 5;
   margin-right: 40px;
 }
-
 .title-project-text-two {
-  margin-right: 24px;
-  margin-left: 152px;
-  margin-top: 70px;
+grid-column: 2 / span 6;
   h1 {
     @extend %title-bold;
   }
 }
 
-.img-two {
-  margin-left: 20px;
-}
-
-.blue-rectangle-two {
-  background-color: rgba(53, 108, 255, 0.32);
-  position: absolute;
-  width: 536px;
-  height: 320px;
-  margin-right: 20px;
-  margin-top: 20px;
-  border-radius: 8px;
-}
 
 @media (max-width: 500px) {
   img {

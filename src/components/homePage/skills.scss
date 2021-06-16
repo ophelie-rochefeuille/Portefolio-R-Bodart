@@ -1,5 +1,7 @@
 @import "../buttons.scss";
 @import "../fonts.scss";
+@import "../../components/variables.scss";
+@import "./skillsMobile.scss";
 
 .container-skills {
   margin: 0;
@@ -10,12 +12,32 @@
   }
 }
 
-.container-differents-skills {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+.container-differents-skills{
+  max-width: $max-width;
 }
 
+//grid dimensions 
+.container-skills-top,
+.container-skills-bottom{
+  display: grid;
+  @include grid-lg;
+ }
+
+ .container-skills-top-left,
+ .container-skills-bottom-left{
+   display: grid;
+   grid-column: 2/ span 5;
+   display: flex;
+ }
+ 
+ .container-skills-top-right,
+ .container-skills-bottom-right{
+   display: grid;
+   grid-column: 7/ span 5;
+   display: flex;
+ }
+// 
+ 
 .skills-h1-title {
   max-width: 80%;
   margin-left: auto;
@@ -37,10 +59,7 @@
   margin-right: 16px;
 }
 
-.container-skills-top,
-.container-skills-bottom {
-  display: flex;
-}
+
 .div-skills-details {
   max-width: 80%;
   h2 {
@@ -59,42 +78,4 @@
   @extend %button-red-white;
 }
 
-@media (max-width: 500px) {
-  .container-skills-top {
-    display: block;
-  }
-  .container-skills-bottom {
-    display: block;
-    margin-top: 32px;
-  }
-  .skills-h1-title {
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-  }
-  .container-skills-top-left,
-  .container-skills-bottom-left {
-    display: flex;
-  }
-  .container-skills-top-right,
-  .container-skills-bottom-right {
-    display: flex;
-    margin-top: 32px;
-  }
-  .container-skills-img {
-    display: flex;
-    align-items: initial;
-  }
-  .img-skills {
-    min-width: 64px;
-    height: 64px;
-    margin-right: 8px;
-  }
-  .h2-skills {
-    margin: 0px 0px 8px 0px;
-  }
-  .svg-skills {
-    width: 64px;
-    height: 64px;
-  }
-}
+

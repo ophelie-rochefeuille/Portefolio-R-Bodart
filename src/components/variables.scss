@@ -1,0 +1,19 @@
+
+.main-wrapper {
+    max-width: 1440px;
+}
+
+@mixin grid-lg {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    margin: 0px 8px;
+}
+
+@mixin grid-xs {
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0px 16px;
+}
+
+
+$max-width: 1440px auto;
+$background-color: #f8faff;
