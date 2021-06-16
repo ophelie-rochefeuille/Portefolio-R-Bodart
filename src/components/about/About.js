@@ -1,4 +1,6 @@
 import React , {Component} from 'react'; 
+import { Link } from 'react-router-dom';
+import Footer from '../footer/Footer';
 import './about.scss';
 import bodartpng from './bodart.png';
 import vision from './montains.png';
@@ -25,7 +27,10 @@ export default class PortefolioList extends Component {
                
 
                 <div className='container-about-hobbies'>
-                    <p className='paragraph-second-presentation-about'>Passionate about new technologies, for me my work is a passion. I love discovering new things and not restricting myself to a single sector of activity. (To rework)</p>
+                    <div className='p-about-second-presentation-div'>
+                          <p className='paragraph-second-presentation-about'>Passionate about new technologies, for me my work is a passion. I love discovering new things and not restricting myself to a single sector of activity. (To rework)</p>
+                    </div>
+                  
 
 
                     <div className='div-hobbies'>
@@ -64,7 +69,7 @@ export default class PortefolioList extends Component {
                     </div>
                 </div>
 
-
+            <Footer  />
 
             </div>
         )

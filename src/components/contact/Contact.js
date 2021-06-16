@@ -43,13 +43,17 @@ const Contact = () => {
 
                 <div className='div-secondary-container-contact'>
 
+              <div className="main-container-h1-text-contact">
+
                 <div className='container-h1-text-contact'>
                     <h1 className='main-title-contact'>Contact</h1>
                     <p className='paraph-contact'>Feel free to contact me for a project, an opportunity or anything else…</p>
                 </div>
+              </div>
 
-                <div>
-                        <form>
+                <div className="formulaire-contact-div">
+                        <form >
+                          <div className="formulaire-first-container">
                             <div className='div-container-email-subject'>
                                 <div className='div-email div-input-contact'>
                                 <label className='name-label'>Email</label>
@@ -59,7 +63,7 @@ const Contact = () => {
                                        onChange={(e) => setEmail(e.target.value)}
                                        value={email}  />
                                  </div>
-
+                            
                             <div className='div-subject-title div-input-contact'>
                                 <label className='name-label'>Subject</label>
                                 <input type='text'
@@ -69,8 +73,10 @@ const Contact = () => {
                                     value={subject}   />
                                  </div>
                             </div>
-                           
+                           </div>
 
+
+                           <div className="formulaire-second-container">
                             <div className='div-object-text div-input-contact'>
                                 <label className='name-label'>Object</label>
                                         <textarea name='object'
@@ -78,6 +84,7 @@ const Contact = () => {
                                             onChange={(e) => setObject(e.target.value)}
                                             value={object}
                                               />
+                            </div>
                             </div>
                             <div className='div-button-send'> 
                             <button className='button-send' onClick={handleSubmit} type='button' >Send</button>

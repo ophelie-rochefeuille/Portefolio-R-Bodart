@@ -1,5 +1,28 @@
 @import "../fonts.scss";
 @import "../buttons.scss";
+@import "../variables.scss";
+
+//grid
+.main-container-h1-text-contact{
+    @include grid-lg;
+    display: grid;
+}
+
+.container-h1-text-contact{
+    grid-column: 3/ span 5;
+}
+
+
+.formulaire-first-container{
+    @include grid-lg;
+    display: grid;
+}
+
+.div-container-email-subject{
+    display: grid;
+    grid-column: 3/ span 8;
+    width: 100%;
+}
 
 .main-container-contact{
     background-color: #f8faff;
@@ -24,26 +47,7 @@
 }
 
 .div-secondary-container-contact{
-    width: 928px;
     height: 925px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 225px;
-
-}
-
-.div-container-email-subject{
-    display: flex;
-}
-
-.div-email, 
-.div-subject-title{
-    width: 50%;
-}
-
-.div-input-contact{
-    display: flex;
-    flex-direction: column;
 }
 
 .input-contact {

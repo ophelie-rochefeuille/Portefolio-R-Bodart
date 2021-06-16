@@ -1,25 +1,26 @@
 @import '../fonts.scss';
+@import "../variables.scss";
+
+// premiere partie page about 
 
 .background-div-about{
     background-color: #f8faff;
 }
 .container-about-hi {
+    @include grid-lg;
+    display: grid;
     height: 600px;
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
+    max-width: $max-width;
     align-items: center;
 }
 
 .bodartpng {
-    width: 328px;
-    height: 328px;
+    grid-column: 3/ span 3;
+    width: 100%;
 }
 
 .div-presentation-about{
-    margin-left: 32px;
+    grid-column: 6/ span 5;
 }
 
 .name-h1-about{
@@ -31,34 +32,39 @@
     font-size: 16px;
 }
 
-.div-hobbies{
-    display: flex;
-    margin-left: 40px;
-    margin-bottom: 80px;
-}
 
-.hobbies-img{
-    width: 536px;
-    height: 320px;
+//deuxieme partie page about
+
+.p-about-second-presentation-div{
+    @include grid-lg;
+    display: grid;
 }
 
 .paragraph-second-presentation-about{
+    grid-column: 3/span 8;
+    width: 100%;
     text-align: center;
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 64px;
     margin-bottom: 64px;
-    font-family: $font-paragraph;
-    font-size: 18px;
 }
 
+.div-hobbies{
+    @include grid-lg;
+    display: grid;
+    margin-left: 40px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.hobbies-img{
+   grid-column: 1/span 5;
+   width: 100%;
+}
+
+
+
 .h1-paraph-hobbies{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 56px;
-    margin-right: 126px;
+    grid-column: 6/span 6;
+    margin-left: 20px;
     h1 {
         font-size: 32px;
     }
