@@ -49,3 +49,58 @@
 .paragraph-portefoliolist-first-part {
   font-family: $font-paragraph;
 }
+
+//média mobile
+
+@media (max-width: 500px) {
+  .main-container-portefolioList {
+    max-width: $max-width;
+  }
+  
+  .div-container-img-h-p {
+    @include grid-lg;
+    display: grid;
+    width: 100%;
+    height: 450px;
+    background-color: #f8faff;
+  }
+  
+  .div-portefolio-img{
+    grid-column: 1/ span 12;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .portefolio-img{
+    width: 100%;
+  }
+  
+  .div-h-p-portefolioList {
+    grid-column: 1/ span 12;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .main-container-portefoliolist-project{
+    @include grid-lg;
+    display: grid;
+    max-width: $max-width;
+  }
+  
+  .a-project-element{
+    grid-column: span 12;
+    width: 100%;
+  }
+  
+  .portefolio-title-portefolioList {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  
+  .paragraph-portefoliolist-first-part {
+    font-family: $font-paragraph;
+  }
+  
+}
