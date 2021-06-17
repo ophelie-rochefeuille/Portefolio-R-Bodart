@@ -12,17 +12,45 @@
     grid-column: 3/ span 5;
 }
 
-
-.formulaire-first-container{
+.main-container-form{
     @include grid-lg;
     display: grid;
+    width: 100%;
+    max-width: $max-width;
 }
 
-.div-container-email-subject{
-    display: grid;
-    grid-column: 3/ span 8;
-    width: 100%;
+.div-email{
+    grid-column: 3/span 4;
 }
+
+.div-subject-title{
+    grid-column: 7/ span 4;
+}
+
+.second-container-form{
+    @include grid-lg;
+    display: grid;
+    width: 100%;
+    max-width: $max-width;
+}
+
+.div-object-text{
+    grid-column: 3/ span 8;
+}
+
+.div-button-send{
+    @include grid-lg;
+    display: grid;
+    width: 100%;
+    max-width: $max-width;
+}
+
+.button-send{
+    grid-column: 10/ span 1;
+}
+
+//
+
 
 .main-container-contact{
     background-color: #f8faff;
@@ -50,11 +78,8 @@
     height: 925px;
 }
 
-.input-contact {
-    margin: 0;
-}
-
 .object-input {
+    width: 100%;
     height: 120px;
     background-color: #f8faff;
     border: solid 1px #9aa3bc;
@@ -65,7 +90,9 @@
 
 .subject-input,
 .email-input {
-    height: 40px;
+    width: 90%;
+    height: 30px;
+    margin: 0px;
     background-color: #f8faff;
     border: solid 1px #9aa3bc;
     border-radius: 8px;
@@ -77,10 +104,6 @@
     margin-top: 16px;
 }
 
-.div-button-send{
-    display: flex;
-    justify-content: flex-end;
-}
 .button-send{
     margin-top: 32px;
     @extend %button-base;
@@ -91,3 +114,67 @@
     border: solid 2px #356cff;
     border-radius: 8px;
 }
+
+.form-message,
+.form-message-succes{
+    display: flex;
+    justify-content: center;
+    font-family: $font-regular;
+    margin-top: 20px;
+}
+
+// scss mobile 
+
+@media (max-width: 500px) {
+    //grid
+    .main-container-h1-text-contact{
+        @include grid-xs;
+        display: grid;
+    }
+    
+    .container-h1-text-contact{
+        grid-column: 1/ span 12;
+    }
+    .main-title-contact{
+        text-align: center;
+    }
+    .main-container-form{
+        @include grid-xs;
+        display: grid;
+        width: 100%;
+    }
+    
+    .div-email{
+        grid-column: 1/span 12;
+        width: 100%;
+    }
+    
+    .div-subject-title{
+        grid-column: 1/ span 12;
+    }
+    
+    .subject-input,
+    .email-input{
+    width: 70%;
+    }
+    .second-container-form{
+        @include grid-xs;
+        display: grid;
+        width: 100%;
+    }
+    
+    .div-object-text{
+        grid-column: 1/ span 12;
+        width: 80%;
+    }
+    
+    .div-button-send{
+        @include grid-xs;
+        display: grid;
+        width: 100%;
+    }
+    
+    .button-send{
+        grid-column: 4/ span 5;
+    }
+}    

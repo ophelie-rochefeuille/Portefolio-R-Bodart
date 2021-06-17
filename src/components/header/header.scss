@@ -28,7 +28,7 @@ a {
   color: $font-menu-color-hover;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .menu-pc {
     display: none;
   }
@@ -37,7 +37,7 @@ a {
   }
 }
 
-@media (min-width: 501px) {
+@media (min-width: 768px) {
   .button-burger-mobile {
     display: none;
   }

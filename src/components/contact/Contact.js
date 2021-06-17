@@ -30,6 +30,8 @@ const Contact = () => {
         setEmail("");
         setSubject("");
         setObject("");
+        document.querySelector('.form-message-succes').innerHTML =
+            "Votre message a bien été envoyé."
       })
       .catch(
         (err) =>
@@ -53,43 +55,45 @@ const Contact = () => {
 
                 <div className="formulaire-contact-div">
                         <form >
-                          <div className="formulaire-first-container">
-                            <div className='div-container-email-subject'>
-                                <div className='div-email div-input-contact'>
-                                <label className='name-label'>Email</label>
+                        
+                         <div className="main-container-form">
+                              <div className='div-email div-input-contact'>
+                                <div className='name-label'>Email</div>
                                 <input type='email'
                                        name='email'
                                        className='email-input input-contact'
                                        onChange={(e) => setEmail(e.target.value)}
                                        value={email}  />
-                                 </div>
+                               </div>
+                          
                             
                             <div className='div-subject-title div-input-contact'>
-                                <label className='name-label'>Subject</label>
+                                <div className='name-label'>Subject</div>
                                 <input type='text'
                                     name='subject'
                                     className='subject-input input-contact'
                                     onChange={(e) => setSubject(e.target.value)}
                                     value={subject}   />
-                                 </div>
-                            </div>
-                           </div>
+                             </div>
+                          </div>
 
 
-                           <div className="formulaire-second-container">
+                          <div className='second-container-form'>
                             <div className='div-object-text div-input-contact'>
-                                <label className='name-label'>Object</label>
+                                <div className='name-label'>Object</div>
                                         <textarea name='object'
                                             className='object-input input-contact'
                                             onChange={(e) => setObject(e.target.value)}
                                             value={object}
                                               />
                             </div>
-                            </div>
+                          </div>
+
                             <div className='div-button-send'> 
                             <button className='button-send' onClick={handleSubmit} type='button' >Send</button>
                             </div>
                             <div className='form-message'></div>
+                            <div className='form-message-succes'></div>
                            
                         </form>
                     

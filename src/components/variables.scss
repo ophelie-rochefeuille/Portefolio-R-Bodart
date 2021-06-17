@@ -14,6 +14,10 @@
     margin: 0px 16px;
 }
 
+@mixin grid-form {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
 
 $max-width: 1440px auto;
 $background-color: #f8faff;

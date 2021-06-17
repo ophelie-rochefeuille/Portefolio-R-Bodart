@@ -79,3 +79,92 @@
     font-family: $font-paragraph;
     list-style-type: disc;
 }
+
+// mobile et tablette 
+
+@media (max-width: 500px) {
+    
+
+    .background-div-about{
+        background-color: #f8faff;
+        height: 450px;
+    }
+    .container-about-hi {
+        @include grid-lg;
+        display: grid;
+        align-items: center;
+        height: inherit;
+    }
+    
+    .bodartpng {
+        grid-column: 1/ span 12;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    
+    .div-presentation-about{
+        grid-column: 1/ span 12;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .name-h1-about{
+        font-size: 30px;
+    }
+    
+    .presentation-about{
+        font-family: $font-paragraph;
+        font-size: 16px;
+    }
+    
+    
+    //deuxieme partie page about
+    
+    .p-about-second-presentation-div{
+        @include grid-lg;
+        display: grid;
+    }
+    
+    .paragraph-second-presentation-about{
+        grid-column: 1/span 12;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    
+    .div-hobbies{
+        @include grid-lg;
+        display: grid;
+        margin-left: 40px;
+        margin-bottom: 80px;
+        align-items: center;
+    }
+    
+    .hobbies-img{
+       grid-column: 1/span 5;
+       width: 100%;
+    }
+    
+    
+    
+    .h1-paraph-hobbies{
+        grid-column: 6/span 6;
+        margin-left: 20px;
+        h1 {
+            font-size: 12px;
+        }
+        p{
+            font-family: $font-paragraph;
+            font-size: 20px;
+        }
+    }
+    
+    .hobbies-list {
+        font-size: 20px;
+        font-family: $font-paragraph;
+        list-style-type: disc;
+    }
+}
