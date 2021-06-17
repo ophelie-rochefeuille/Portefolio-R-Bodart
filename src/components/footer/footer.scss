@@ -26,3 +26,35 @@ footer {
     cursor: pointer;
   }
 }
+
+@media (max-width: 500px){
+
+  footer {
+    min-width: 100%;
+  }
+  
+  .footer-base {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .p-made {
+    font-family: $font-light;
+    font-size: 12px;
+  }
+  
+  .social-network-logo {
+    width: 9px;
+    height: 9px;
+    margin: 8px;
+    padding: 2px;
+    background-color: #f8faff;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+
+}
