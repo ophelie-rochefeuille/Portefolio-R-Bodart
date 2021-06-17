@@ -10,8 +10,6 @@
   margin-bottom: 64px;
 }
 
-// project one, grids & marges div-box-one
-
 .container-box{
   margin-left: 40px;
   grid-column: 1/span 5;
@@ -22,9 +20,6 @@
   width: 100%;
 }
 
-
-
-// marges & grids project-explications-one 
 .title-project-text{
   margin-left: 40px;
   grid-column: 6/ span 6;
@@ -54,9 +49,6 @@
   justify-content: flex-end;
 }
 
-
-// project two, grids & marges div-box-two 
-
 .container-box-two{
   grid-column: 8/ span 5;
   margin-right: 40px;
@@ -69,58 +61,46 @@ grid-column: 2 / span 6;
 }
 
 
-@media (max-width: 500px) {
-  img {
-    width: 328px;
-    height: 200px;
-  }
-  .containerRectangle {
-    height: min-content;
-    max-width: 100%;
-    margin: 40px 0px 0px 20px;
-  }
-  .container-project-one {
-    margin: 0;
-    display: block;
-  }
-  .red-rectangle {
-    background-color: rgba(234, 42, 64, 0.32);
-    position: absolute;
-    width: 328px;
-    height: 200px;
-    margin-left: 5px;
-    margin-top: 5px;
-    border-radius: 8px;
-  }
-  .blue-rectangle {
-    background-color: rgba(53, 108, 255, 0.32);
-    position: absolute;
-    width: 328px;
-    height: 200px;
-    margin-left: 10px;
-    margin-top: 10px;
-    border-radius: 8px;
-  }
-  .title-project-text {
-    margin: 16px;
-  }
-  .blue-rectangle-two {
-    width: 328px;
-    height: 200px;
-  }
-  .title-project-text-two {
-    margin: 16px;
-  }
-  .container-button-see-more {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-  .red-rectangle-two {
-    margin-left: 15px;
-  }
-  .blue-rectangle-two {
-    margin-top: 10px;
-    margin-left: 10px;
-  }
+
+// média mobile 
+
+@media (max-width: 500px){
+
+  
+.container-project{
+  @include grid-lg;
+  display: grid;
+}
+
+.container-box{
+  grid-column: 1/span 12;
+  margin: 48px 0px 24px 0px;
+
+}
+ 
+.title-project-text{
+  grid-column: 1/ span 12;
+  width: 100%;
+  margin: 0px;
+}
+
+.title-class{
+  margin: 0px;
+  font-size: 26px;
+}
+.button-see-more { 
+  margin: 24px 0px;
+  grid-column: 1/ span 12;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-box-two{
+grid-column: 1/ span 12;
+width: 100%;
+padding-top: 20px;
+}
+.title-project-text-two {
+grid-column: 1 / span 12;
+}
 }

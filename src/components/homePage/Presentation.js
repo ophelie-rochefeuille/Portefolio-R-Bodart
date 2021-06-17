@@ -2,7 +2,7 @@ import React , { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import pictureBodart from './bitmap.jpg';
 import './presentation.scss';
-import './presentationMobile.scss';
+
 
 
 export default class Presentation extends Component {
