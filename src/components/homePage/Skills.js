@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './skills.scss';
-import './skillsMobile.scss';
 import {ReactComponent as LogoUXDesign} from './ux-design.svg';
 import {ReactComponent as LogoUIDesign} from './ui-design.svg';
 import {ReactComponent as LogoFontEndDev} from './font-end-development.svg';
