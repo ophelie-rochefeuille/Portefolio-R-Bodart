@@ -10,7 +10,7 @@ export default class Header extends Component {
         return(
            <header>
                <div className="principal-div-header">
-                <LogoBodart />
+                <NavLink to='/homePage'> <LogoBodart /> </NavLink>
                     <div className="inferior-div-header">
                        
                     <NavLink to='/homePage'  activeClassName='active-link' className="menu menu-pc home-button" href="/"> Home </NavLink>

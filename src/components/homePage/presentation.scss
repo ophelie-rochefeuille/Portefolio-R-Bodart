@@ -34,8 +34,12 @@
 .h1-title-presentation-profil {
   @extend %title-bold;
   font-size: 40px;
+  margin: 4px 0px;
 }
 
+.h2-presentation{
+  margin: 8px 0px;
+}
 .p-presentation{
   margin-bottom: 40px;
 }

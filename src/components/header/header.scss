@@ -1,5 +1,5 @@
-@import "variablesHeader";
 @import "../fonts";
+@import "../variables.scss";
 
 .principal-div-header {
   display: flex;
@@ -8,8 +8,15 @@
   .inferior-div-header {
     width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+  }
+  .menu{
     margin-left: 48px;
+    transition: 0.3s;
+    &:hover {
+      color: $font-menu-color-hover;
+      transition: 0.3s;
+    }
   }
 }
 li {
@@ -19,9 +26,6 @@ a {
   @extend %title-bold;
   text-decoration: none;
   font-size: $font-menu-size;
-  &:hover {
-    color: $font-menu-color-hover;
-  }
 }
 
 .active-link {
