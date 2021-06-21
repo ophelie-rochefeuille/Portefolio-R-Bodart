@@ -20,7 +20,7 @@ export default class ProjectTitle extends Component {
 
                 <div className='title-project-text'>
                     <h1 className='title-class'>Project Title</h1>
-                    <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training? Not too many people! That is what the MCSE boot camps are for.</p>
+                    <p className='paraph-project'>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training? Not too many people! That is what the MCSE boot camps are for.</p>
                     <div className='container-button-see-more'>
                     <input type='button' value='See more' className="button-see-more" />
                     </div>

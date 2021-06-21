@@ -78,7 +78,8 @@ grid-column: 2 / span 6;
 
 }
  
-.title-project-text{
+.title-project-text,
+.title-project-text-two{
   grid-column: 1/ span 12;
   width: 100%;
   margin: 0px;
@@ -87,7 +88,13 @@ grid-column: 2 / span 6;
 .title-class{
   margin: 0px;
   font-size: 26px;
+  padding: 0px 16px;
 }
+
+.paraph-project{
+  padding: 0px 16px;
+}
+
 .button-see-more { 
   margin: 24px 0px;
   grid-column: 1/ span 12;
@@ -100,7 +107,5 @@ grid-column: 1/ span 12;
 width: 100%;
 padding-top: 20px;
 }
-.title-project-text-two {
-grid-column: 1 / span 12;
-}
+
 }
