@@ -1,9 +1,9 @@
 export default [
     {
-        component: "title_level_1",
-        title: "Le premier projet"
+        component: "background_main_picture",
+        picture: "main_picture_b2b.png"
 },
-{       component: "paragraph_level",
+{       component: "title_h1",
         paragraph: "bonjour, aujourd'hui nous sommes huit à manger au restaurant malgré le soleil"
 
 },     

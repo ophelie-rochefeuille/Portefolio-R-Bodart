@@ -29,7 +29,7 @@ render () {
   let backdrop;
 
   if(this.state.sideDrawerOpen) {
-    sideDrawer = <SideDrawer />;
+    sideDrawer = <SideDrawer click={this.drawerToggleClickHandler} />;
     backdrop = <Backdrop click={this.backdropClickHandler} />
   }
   return (

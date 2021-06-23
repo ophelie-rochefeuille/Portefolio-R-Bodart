@@ -4,12 +4,12 @@ import './SideDrawer.scss';
 
 const sideDrawer = props => (
     <nav className='side-drawer'>
-        <ul>
-            <li><NavLink to='/homePage'  activeClassName='active-link' className="menu home-button" href="/"> Home </NavLink></li>
-            <li><NavLink to='/portefolio'  activeClassName='active-link'  className="menu portefolio-button">Portefolio</NavLink></li>
-            <li><a activeClassName='active-link' className="menu resume-button"href="/">Resume</a></li>
-            <li><NavLink to='/about' activeClassName='active-link'  className="menu about-button">About</NavLink></li>
-            <li><NavLink to='/contact' activeClassName='active-link' className="menu contact-button">Contact</NavLink></li>
+        <ul className='main-container-list-menu-burger'>
+            <li className="list-menu-burger"><NavLink to='/homePage'  activeClassName='active-link' className="menu-burger home-button" href="/" onClick={props.click}> Home </NavLink></li>
+            <li className="list-menu-burger"><NavLink to='/portefolio'  activeClassName='active-link'  className="menu-burger portefolio-button" onClick={props.click}>Portefolio</NavLink></li>
+            <li className="list-menu-burger"><a activeClassName='active-link' className="menu-burger resume-button"href="/" onClick={props.click}>Resume</a></li>
+            <li className="list-menu-burger"><NavLink to='/about' activeClassName='active-link'  className="menu-burger about-button" onClick={props.click}>About</NavLink></li>
+            <li className="list-menu-burger"><NavLink to='/contact' activeClassName='active-link' className="menu-burger contact-button" onClick={props.click}>Contact</NavLink></li>
         </ul>
     </nav>
 );

@@ -3,6 +3,6 @@ import React from "react";
 export default props => (
   <div className="foo">
 
-    <h1>{props.block.title}</h1>
+    <img src={props.block.picture}></img> 
   </div>
 );
