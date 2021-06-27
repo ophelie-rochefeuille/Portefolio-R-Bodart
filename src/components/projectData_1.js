@@ -1,7 +1,7 @@
 export default [
     {
         component: "background_main_picture",
-        picture: "main_picture_b2b.png"
+        picture: process.env.PUBLIC_URL + '/pictures/main_picture_b2b.png'
 },
 {       component: "title_h1",
         paragraph: "bonjour, aujourd'hui nous sommes huit à manger au restaurant malgré le soleil"
