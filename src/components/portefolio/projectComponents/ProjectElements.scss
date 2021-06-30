@@ -1,4 +1,11 @@
-.main_div_project_element,
-.main_picture_b2b{
+@import '../../variables.scss';
+
+.main_picture_background{ 
     max-width: 1440px ;
+    width: 100%;
+}
+
+.explanatory_img{
+    max-width: 1440px ;
+    width: 100%;
 }

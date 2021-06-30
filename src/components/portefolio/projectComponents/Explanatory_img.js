@@ -4,6 +4,6 @@ import "../projectComponents/ProjectElements.scss";
 export default props => (
   <div className="main_div_project_element">
 
-    <img src={props.block.picture} className="main_picture_background"></img> 
+    <img src={props.block.explanatory_img} className="explanatory_img"></img> 
   </div>
 );
