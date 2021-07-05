@@ -1,4 +1,4 @@
-let projectOne = [
+let project_2 = [
     {
         component: "background_main_picture",
         picture: process.env.PUBLIC_URL + '/pictures/main_picture_b2c.png'
@@ -76,4 +76,4 @@ paragraph: "Au final la simplification de la complétion des formulaires de dema
 ]
 
 
-export default projectOne;
+export default project_2;

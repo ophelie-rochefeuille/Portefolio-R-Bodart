@@ -24,7 +24,7 @@ export default [
     {
         id:"3",
         title:"Workalize",
-        img:"https://cdn.pixabay.com/photo/2015/05/15/14/38/computer-768608_1280.jpg",
+        img: process.env.PUBLIC_URL + '/pictures/main_picture_asgora.jpg',
         company:"@Workalize",
         categories: " #UI  #UX Design",
         content: [{
@@ -35,7 +35,7 @@ export default [
     {
         id:"4",
         title:"Workalize",
-        img:"https://cdn.pixabay.com/photo/2015/05/15/14/38/computer-768608_1280.jpg",
+        img:process.env.PUBLIC_URL + '/pictures/main_picture_captain_train.png',
         company:"@Workalize",
         categories: " #UI  #UX Design",
         content: [{

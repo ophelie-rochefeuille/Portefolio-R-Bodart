@@ -1,5 +1,5 @@
 
-let projectOne = [
+let project_1 = [
     {
         component: "background_main_picture",
         picture: process.env.PUBLIC_URL + '/pictures/main_picture_b2b.png'
@@ -113,4 +113,4 @@ paragraph: "Au final des retours très positifs ayant permis à certains profess
 ]
 
 
-export default projectOne;
+export default project_1;
