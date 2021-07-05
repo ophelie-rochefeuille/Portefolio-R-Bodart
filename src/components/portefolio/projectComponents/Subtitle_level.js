@@ -1,8 +1,8 @@
 import React from "react";
  
 export default props => (
-  <div className="foo">
+  <div className="main_div_project_element">
 
-    <h4>{props.block.subtitle}</h4>
+    <h2 className="subtitle-project-component">{props.block.subtitle}</h2>
   </div>
 );

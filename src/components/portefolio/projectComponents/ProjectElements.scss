@@ -1,11 +1,60 @@
 @import '../../variables.scss';
+@import '../../fonts.scss';
 
+.main-div-project-page {
+    max-width: 1440px;
+    @include grid-lg;
+    display: grid;
+    margin-bottom: 20px;
+}
+
+//main picture project
 .main_picture_background{ 
-    max-width: 1440px ;
+    grid-column: 1/ span 12;
     width: 100%;
 }
 
+//component's contruction with grids
+.main_div_project_element{
+    grid-column: 3/ span 8;
+}
+
+// explanatony pictures 
 .explanatory_img{
-    max-width: 1440px ;
     width: 100%;
+    margin: 24px 0px 8px 0px;
+}
+
+//titles
+.title-project-component{
+    font-family: $font-bold;
+    font-size: 40px;
+    margin: 32px 0px 24px 0px;
+}
+
+//subtitles
+.subtitle-project-component{
+    font-family: $font-bold;
+    font-size: 32px;
+    margin: 32px 0px 24px 0px;
+}
+
+//paragraphs + legends 
+.paragraph-project-component{
+    font-family: $font-paragraph;
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px 0px;
+}
+
+.legend-project-component{
+    font-family: $font-paragraph;
+    font-style: italic;
+    text-align: center;
+    margin: 0px;
+}
+
+.link-component{
+    font-family: $font-paragraph;
+    font-size: 16px;
 }

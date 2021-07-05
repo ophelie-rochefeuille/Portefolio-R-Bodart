@@ -8,6 +8,7 @@ import Explanatory_legend from "./projectComponents/Explanatory_legend";
 import Paragraph_level_link from "./projectComponents/Paragraph_level_link";
 import Pdf_reader from "./projectComponents/Pdf_reader";
 
+
 const Components = {
   background_main_picture: Background_main_picture,
   subtitle_level: Subtitle_level,

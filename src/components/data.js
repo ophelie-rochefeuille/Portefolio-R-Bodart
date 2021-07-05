@@ -13,7 +13,7 @@ export default [
     {
         id:"2",
         title:"Quelle Energie - B2C",
-        img: process.env.PUBLIC_URL + '/pictures/main_picture_b2c.png',
+        img: process.env.PUBLIC_URL + '/pictures/b2c-card.png',
         company:"@Workalize",
         categories: " #UI #UX Design",
         content: [{
@@ -34,53 +34,9 @@ export default [
     },
     {
         id:"4",
-        title:"Workalize",
+        title:"Captain Train",
         img:process.env.PUBLIC_URL + '/pictures/main_picture_captain_train.png',
-        company:"@Workalize",
-        categories: " #UI  #UX Design",
-        content: [{
-            project_title: "captain Train",
-        }
-        ]
-    },
-    {
-        id:"5",
-        title:"Workalize",
-        img:"https://cdn.pixabay.com/photo/2015/05/15/14/38/computer-768608_1280.jpg",
-        company:"@Workalize",
-        categories: " #UI  #UX Design",
-        content: [{
-            project_title: "captain Train",
-        }
-        ]
-    },
-    {
-        id:"6",
-        title:"Workalize",
-        img:"https://cdn.pixabay.com/photo/2015/05/15/14/38/computer-768608_1280.jpg",
-        company:"@Workalize",
-        categories: " #UI  #UX Design",
-        content: [{
-            project_title: "captain Train",
-        }
-        ]
-    },
-    {
-        id:"7",
-        title:"Workalize",
-        img:"https://cdn.pixabay.com/photo/2015/05/15/14/38/computer-768608_1280.jpg",
-        company:"@Workalize",
-        categories: " #UI  #UX Design",
-        content: [{
-            project_title: "captain Train",
-        }
-        ]
-    },
-    {
-        id:"8",
-        title:"Workalize",
-        img:"https://cdn.pixabay.com/photo/2015/05/15/14/38/computer-768608_1280.jpg",
-        company:"@Workalize",
+        company:"@CaptainTrain",
         categories: " #UI  #UX Design",
         content: [{
             project_title: "captain Train",

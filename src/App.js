@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-do
 import ProjectPage from './components/portefolio/ProjectPage';
 import SideDrawer from './components/sideDrawer/SideDrawer';
 import Backdrop from './components/backdrop/Backdrop';
+import ScrollToTop from './ScrollToTop';
 
 class App extends Component  {
   state={
@@ -34,6 +35,8 @@ render () {
   }
   return (
     <Router>
+    <ScrollToTop />
+    
  <div className="App">
 
       <header className="App-header">
@@ -41,6 +44,7 @@ render () {
         {sideDrawer}
         {backdrop}
         </header>
+       
         <div className='main-wrapper'>
           <Switch>
         <Route path="/homePage" component={HomePage} />
@@ -51,10 +55,9 @@ render () {
         <Redirect to="/homePage" />
         </Switch>
         </div>
-      
+        
     </div>
    
-     
     </Router>
   
   );

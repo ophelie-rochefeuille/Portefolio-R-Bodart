@@ -1,8 +1,8 @@
 import React from "react";
  
 export default props => (
-  <div className="foo">
+  <div className="main_div_project_element">
 
-    <p>{props.block.explanatory_legend} <a href={props.block.url}>{props.block.url_viewer}</a></p>
+    <p className="legend-project-component">{props.block.explanatory_legend} <a className="link-component" href={props.block.url}>{props.block.url_viewer}</a></p>
   </div>
 );
