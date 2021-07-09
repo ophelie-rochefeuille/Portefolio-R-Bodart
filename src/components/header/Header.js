@@ -4,6 +4,8 @@ import {ReactComponent as LogoBodart} from './logobodart.svg';
 import './header.scss';
 import BurgerButton from '../sideDrawer/BurgerButton';
 
+
+
 export default class Header extends Component {
  
     render() {
@@ -15,7 +17,7 @@ export default class Header extends Component {
                        
                     <NavLink to='/homePage'  activeClassName='active-link' className="menu menu-pc home-button" href="/"> Home </NavLink>
                     <NavLink to='/portefolio'  activeClassName='active-link'  className="menu menu-pc portefolio-button">Portefolio</NavLink>
-                    <a activeClassName='active-link' className="menu menu-pc resume-button"href="/">Resume</a>
+                    <NavLink to='/resume' activeClassName='active-link' className="menu menu-pc resume-button" href="src/CV_Bodart_Raphaël.pdf" target="_blank">Resume</NavLink>
                     <NavLink to='/about' activeClassName='active-link'  className="menu menu-pc about-button">About</NavLink>
                     <NavLink to='/contact' activeClassName='active-link' className="menu menu-pc contact-button">Contact</NavLink>
                     </div>

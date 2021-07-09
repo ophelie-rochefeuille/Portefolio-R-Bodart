@@ -1,7 +1,7 @@
 
 let arr = [
     {
-        id:1,
+        id:"1",
         project: [
             {
                 component: "background_main_picture",
@@ -116,7 +116,7 @@ let arr = [
         ]
     },
     {
-        id:2,
+        id:"2",
         project: [
                 {
                     component: "background_main_picture",
@@ -352,6 +352,8 @@ let arr = [
 
     
 ]
+
+
 
 
 export default arr;
