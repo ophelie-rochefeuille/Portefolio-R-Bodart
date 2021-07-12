@@ -24,13 +24,24 @@ export default class ProjectTitle extends Component {
  console.log(descriptionLastProject);
  console.log(descriptionSecondLastProject);
 
+ const divStyleFisrtProject = {
+    backgroundImage: 'url(' + descriptionLastProject.img + ')',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    borderRadius: '8px'};
+  
+ const divStyleSecondProject = {
+    backgroundImage: 'url(' + descriptionSecondLastProject.img + ')',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    borderRadius: '8px'};
+
         return (
             <div>
 
             <div className='container-project'>
                 <div className='container-box'>
-                    <div className='container-picture-box'>
-                    <img className='picture-project' alt='Poject Picture' src={descriptionLastProject.img}></img>
+                    <div className='container-picture-box' style={divStyleFisrtProject}>
                     </div>
                 </div>
 
@@ -58,9 +69,7 @@ export default class ProjectTitle extends Component {
                     
                 </div>  
                 <div className='container-box-two'>
-                    <div className='container-picture-box'>
-                    <img className="picture-project" alt='Poject Picture' src={descriptionSecondLastProject.img}></img>
-                    </div>
+                    <div className='container-picture-box' style={divStyleSecondProject}></div>
                 </div> 
             </div> 
     </div>
