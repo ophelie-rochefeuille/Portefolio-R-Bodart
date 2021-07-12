@@ -9,6 +9,7 @@ import ProjectPage from './components/portefolio/ProjectPage';
 import SideDrawer from './components/sideDrawer/SideDrawer';
 import Backdrop from './components/backdrop/Backdrop';
 import ScrollToTop from './ScrollToTop';
+import Resume from './components/Resume';
 
 class App extends Component  {
   state={
@@ -50,6 +51,7 @@ render () {
         <Route path="/homePage" component={HomePage} />
         <Route path="/portefolio" exact component={PortefolioList} />
         <Route path='/about' component={About}  />
+        <Route path='/resume' component={Resume}  />
         <Route path='/contact' component={Contact}  />
         <Route path='/portefolio/:id' component={ProjectPage}  />
         <Redirect to="/homePage" />
