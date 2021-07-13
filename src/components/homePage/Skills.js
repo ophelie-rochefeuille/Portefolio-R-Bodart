@@ -5,6 +5,7 @@ import {ReactComponent as LogoUIDesign} from './ui-design.svg';
 import {ReactComponent as LogoFontEndDev} from './font-end-development.svg';
 import {ReactComponent as LogoProjectManagement} from './project-management.svg';
 import '../../components/variables.scss';
+import cv from '../../bodart.pdf';
 
 export default class ProjectTitle extends Component {
 
@@ -68,7 +69,8 @@ export default class ProjectTitle extends Component {
                
             </div> 
             <div className='div-button-skills-resume'>
-                <input className='input-skills-resume' type='button' value='See Resume'></input>
+            <a href={cv} target="_blank">  <input className='input-skills-resume' type='button' value='See Resume'></input></a>
+    
             </div>
          </div>
 

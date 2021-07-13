@@ -78,10 +78,19 @@ grid-column: 2 / span 6;
   display: grid;
 }
 
+.container-project-two {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: baseline;
+}
 .container-box{
   grid-column: 1/span 12;
   margin: 48px 0px 24px 0px;
 
+}
+
+.container-picture-box{
+  height: 220px;
 }
  
 .title-project-text,
@@ -89,6 +98,10 @@ grid-column: 2 / span 6;
   grid-column: 1/ span 12;
   width: 100%;
   margin: 0px;
+}
+
+.title-project-text-two{
+  margin-top: 20px;
 }
 
 .title-class{
@@ -99,15 +112,17 @@ grid-column: 2 / span 6;
 
 .paraph-project{
   padding: 0px 16px;
+  text-align: justify;
 }
 
 .button-see-more { 
   margin: 24px 0px;
   grid-column: 1/ span 12;
-  margin-left: auto;
-  margin-right: auto;
 }
 
+.container-button-see-more{
+  justify-content: center;
+}
 .container-box-two{
 grid-column: 1/ span 12;
 width: 100%;

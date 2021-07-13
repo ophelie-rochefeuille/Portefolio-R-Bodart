@@ -2,6 +2,7 @@ import React , { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import pictureBodart from './bitmap.jpg';
 import './presentation.scss';
+import cv from "../../bodart.pdf";
 
 
 
@@ -20,7 +21,7 @@ export default class Presentation extends Component {
               <h2 className='h2-presentation'>Product Designer</h2>
               <p className='p-presentation'>Passionate about new technologies, for me my work is a passion. I love discovering new things and not restricting myself to a single sector of activity.</p>
               <NavLink to='/portefolio' className='button-presentation projects-button-presentation'>Projects</NavLink>
-              <NavLink to='/homePage' className='button-presentation resume-button-presentation'>Resume</NavLink>
+              <a href={cv} target="_blank" className='button-presentation resume-button-presentation'>Resume</a>
             </div> 
             </div>
          </div>

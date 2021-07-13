@@ -58,3 +58,7 @@
     font-family: $font-paragraph;
     font-size: 16px;
 }
+
+Footer{
+    grid-column: 1/ span 12;
+}

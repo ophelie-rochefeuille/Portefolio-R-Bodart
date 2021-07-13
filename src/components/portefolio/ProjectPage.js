@@ -7,7 +7,7 @@
     import projectData_4 from "../projectData_4";
     import Components from "./components";
     import "../portefolio/projectComponents/ProjectElements.scss";
-    
+    import Footer from "../footer/Footer";
     
     
     const ProjectPage = () => { 
@@ -20,28 +20,31 @@
             return(
                 <div className="main-div-project-page">
                 {projectData_1.map(block => Components(block))}
+                <Footer />
               </div>  
             )
         } else if (id === "2") {
             return (
                 <div className="main-div-project-page">
                 {projectData_2.map(block => Components(block))}
+                <Footer />
               </div> 
             )
         } else if (id === "3") {
           return (
               <div className="main-div-project-page">
               {projectData_3.map(block => Components(block))}
+              <Footer />
             </div> 
           )
       } else if (id === "4") {
         return (
             <div className="main-div-project-page">
             {projectData_4.map(block => Components(block))}
+            <Footer className='footer' />
           </div> 
         )
     } 
-            
            
         }
     

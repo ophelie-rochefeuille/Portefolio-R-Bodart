@@ -39,3 +39,10 @@ $color-font-company: #ea2a40;
   color: #2a2a2a;
   font-size: 16px;
 }
+
+@media (max-width: 500px) {
+
+.img-portefolio{
+  height: 220px;
+}
+}

@@ -57,7 +57,7 @@ export default class ProjectTitle extends Component {
                 </div>   
             </div>
 
-            <div className='container-project'>
+            <div className='container-project container-project-two'>
                
                 
                 <div className='title-project-text-two'>
