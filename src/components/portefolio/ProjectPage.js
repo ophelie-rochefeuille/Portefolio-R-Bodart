@@ -1,10 +1,9 @@
- import React, { useState } from "react";
+ import React from "react";
     import { useParams } from "react-router";
-    import '../projectData_1';
-    import projectData_1 from "../projectData_1";
-    import projectData_2 from "../projectData_2";
-    import projectData_3 from "../projectData_3";
-    import projectData_4 from "../projectData_4";
+    import projectData_1 from "../dataProjects/projectData_1";
+    import projectData_2 from "../dataProjects/projectData_2";
+    import projectData_3 from "../dataProjects/projectData_3";
+    import projectData_4 from "../dataProjects/projectData_4";
     import Components from "./components";
     import "../portefolio/projectComponents/ProjectElements.scss";
     import Footer from "../footer/Footer";

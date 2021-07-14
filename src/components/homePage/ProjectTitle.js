@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import presentationProjectPicture from './rectangle.jpg';
 import  './projectTitle.scss';
 import './homePage.scss';
-import dataProject from "../data";
+import dataProject from "../dataProjects/data";
 import { Link } from 'react-router-dom';
 
 

@@ -1,7 +1,6 @@
 @import "../fonts.scss";
 @import '../variables.scss';
 
-$color-font-company: #ea2a40;
 
 .img-portefolio {
   width: 100%;
@@ -31,13 +30,13 @@ $color-font-company: #ea2a40;
 .name-company {
   font-family: $font-paragraph;
   color: $color-font-company;
-  font-size: 16px;
+  font-size: $font-size-paragraph-desktop;
 }
 
 .name-category {
   font-family: $font-paragraph;
   color: #2a2a2a;
-  font-size: 16px;
+  font-size: $font-size-paragraph-desktop;
 }
 
 @media (max-width: 500px) {

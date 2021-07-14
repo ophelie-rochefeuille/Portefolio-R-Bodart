@@ -1,5 +1,4 @@
 import React , { Component } from 'react';
-import { Link, NavLink, Route } from 'react-router-dom';
 import './projectElement.scss';
 
 

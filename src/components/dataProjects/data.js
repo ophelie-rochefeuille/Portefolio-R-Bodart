@@ -1,4 +1,5 @@
-export default [
+
+let data = [
     {
         id:"1",
         title: "Quelle Energie - B2B",
@@ -32,3 +33,5 @@ export default [
         content: "Dans le cadre d’une mise en pratique d’un processus de tests utilisateurs lors de ma formation en Master, j’ai choisi d’effectuer une session de tests utilisateurs sur le site Captain Train (avant son rachat par Train Line) avec Elisa DUBOIS."
     }
 ]
+
+export default data;

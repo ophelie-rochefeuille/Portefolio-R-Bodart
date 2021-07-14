@@ -12,7 +12,7 @@
   align-items: center;
   width: 100%;
   height: 600px;
-  background-color: #f8faff;
+  background-color: $background-color;
 }
 
 .div-portefolio-img{
@@ -43,7 +43,7 @@
 }
 
 .portefolio-title-portefolioList {
-  font-size: 40px;
+  font-size: $font-size-title-h1-desktop;
   margin-bottom: 16px;
 }
 
@@ -63,13 +63,13 @@
     display: grid;
     width: 100%;
     height: 450px;
-    background-color: #f8faff;
+    background-color: $background-color;
     margin: 0;
     margin-bottom: 40px;
   }
   
   .div-portefolio-img{
-    grid-column: 1/ span 12;
+    grid-column: $full-grid;
     width: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -81,7 +81,7 @@
   }
   
   .div-h-p-portefolioList {
-    grid-column: 1/ span 12;
+    grid-column: $full-grid;
     padding: 0px;
     width: 100%;
     text-align: center;
@@ -94,12 +94,12 @@
   }
   
   .a-project-element{
-    grid-column: span 12;
+    grid-column: $full-grid;
     width: 100%;
   }
   
   .portefolio-title-portefolioList {
-    font-size: 40px;
+    font-size: $font-size-title-h1-mobile;
     margin-bottom: 16px;
   }
   

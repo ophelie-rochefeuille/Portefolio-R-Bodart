@@ -1,4 +1,4 @@
-import React , { Component } from 'react';
+import React  from 'react';
 import Presentation from './Presentation';
 import ProjectTitle from './ProjectTitle';
 import Skills from './Skills';

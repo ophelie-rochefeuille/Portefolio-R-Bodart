@@ -1,5 +1,4 @@
 @import "../fonts.scss";
-@import "../buttons.scss";
 @import '../variables.scss';
 
 .container-project{
@@ -46,7 +45,7 @@
 }
 .button-see-more {
   @extend %button-base, 
-  %button-blue-white;
+  %button-three;
   margin-top: 0px;
 }
 
@@ -84,7 +83,7 @@ grid-column: 2 / span 6;
   align-items: baseline;
 }
 .container-box{
-  grid-column: 1/span 12;
+  grid-column: $full-grid;
   margin: 48px 0px 24px 0px;
 
 }
@@ -95,7 +94,7 @@ grid-column: 2 / span 6;
  
 .title-project-text,
 .title-project-text-two{
-  grid-column: 1/ span 12;
+  grid-column: $full-grid;
   width: 100%;
   margin: 0px;
 }
@@ -117,14 +116,14 @@ grid-column: 2 / span 6;
 
 .button-see-more { 
   margin: 24px 0px;
-  grid-column: 1/ span 12;
+  grid-column: $full-grid;
 }
 
 .container-button-see-more{
   justify-content: center;
 }
 .container-box-two{
-grid-column: 1/ span 12;
+grid-column: $full-grid;
 width: 100%;
 padding-top: 20px;
 }

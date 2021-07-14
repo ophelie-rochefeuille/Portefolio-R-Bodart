@@ -1,11 +1,10 @@
 import React , {Component} from 'react'; 
 import ProjectElement from './ProjectElement';
-import dataProject from '../data';
+import dataProject from "../dataProjects/data";
 import './portefolioList.scss';
-import portefolioimg from './group-2.png';
+import portefolioimg from "../../pictures/group-2.png";
 import Footer from '../footer/Footer';
 import { Link } from 'react-router-dom';
-import ProjectPage from './ProjectPage';
 
 
 
@@ -25,7 +24,7 @@ export default class PortefolioList extends Component {
 <div className='main-container-portefolioList'>
                 <div className='div-container-img-h-p'>
                 <div className="div-portefolio-img">
-                    <img className='portefolio-img' alt='portefolio image' src={portefolioimg} />
+                    <img className='portefolio-img' alt='portefolio' src={portefolioimg} />
                 </div>
                 <div className='div-h-p-portefolioList'>
                     <h1 className='portefolio-title-portefolioList'>Portefolio</h1>

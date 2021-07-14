@@ -1,4 +1,3 @@
-@import "homePage";
 @import "../fonts.scss";
 @import "../buttons.scss";
 @import '../variables.scss';
@@ -7,7 +6,7 @@
   max-width: 100%;
   height: 600px;
   display: flex;
-  background-color: $background-color-presentation-profil;
+  background-color: $background-color;
 }
 
 //grid 
@@ -33,7 +32,7 @@
 
 .h1-title-presentation-profil {
   @extend %title-bold;
-  font-size: 40px;
+  font-size: $font-size-title-h1-desktop;
   margin: 4px 0px;
 }
 
@@ -47,17 +46,11 @@
 
 //buttons
 .projects-button-presentation {
-  color: #ffffff;
-  background-color: #356cff;
-  border: solid 2px #356cff;
-  &:hover {
-    background-color: #ffffff;
-    color: #356cff;
-  }
+  @extend %button-one;
 }
 
 .resume-button-presentation {
-  @extend %button-red-white;
+  @extend %button-two;
   margin-left: 24px;
 }
 
@@ -75,7 +68,7 @@
   max-width: 100%;
   height: 538px;
   display: flex;
-  background-color: $background-color-presentation-profil;
+  background-color: $background-color;
 }
 
 //grid 
@@ -97,7 +90,7 @@
 
 
 .container-text-presentation-profil {
-  grid-column: 1/ span 12;
+  grid-column: $full-grid;
   margin: 0px;
   text-align: center;
 }

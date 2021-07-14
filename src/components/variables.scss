@@ -19,7 +19,103 @@
     grid-template-rows: repeat(3, 100px);
 }
 
+
+$full-grid: 1/ span 12;
 $max-width: 1440px auto;
+// color 
+$background-color-menu: #ffffff;
 $background-color: #f8faff;
-$font-menu-size: 18px;
+$background-color-backdrop:rgba(12, 20, 43, 0.5);
+
+// font size desktop 
+$font-size-menu-desktop: 18px;
+$font-size-title-h1-desktop: 40px;
+$font-size-title-h2-desktop: 32px;
+$font-size-paragraph-desktop: 16px;
+$font-size-footer-desktop: 14px;
+
+// font size mobile
+$font-size-title-h1-mobile: 32px;
+$font-size-title-h2-mobile: 24px;
+$font-size-paragraph-mobile: 16px;
+$font-size-footer-mobile: 12px;
+
+//font family 
 $font-menu-color-hover: #ea2a40;
+$color-font-company: #ea2a40;
+$font-paragraph-bold: "notosans-bold";
+$font-paragraph: "notosans-regular";
+$font-regular: "quicksand-regular";
+$font-bold: "quicksand-bold";
+$font-light: "quicksand-light";
+
+// 
+
+%title-bold {
+    font-family: $font-bold;
+    color: #0c142b;
+  };
+
+//buttons 
+
+// architecture 
+%button-base {
+    padding: 8px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+    transition-property: all;
+    transition-duration: 0.3s;
+    }
+    }
+
+//blue maj
+$color-button-one: #ffffff;
+$background-color-button-one: #356cff;
+$border-button-one: solid 2px #356cff;
+$background-color-button-one-hover:#ffffff;
+$color-button-one-hover: #356cff;
+
+%button-one{
+    color: $color-button-one;
+    background-color: $background-color-button-one;
+    border: $border-button-one;
+    &:hover {
+      background-color: $background-color-button-one-hover;
+      color: $color-button-one-hover;
+    }}
+
+
+//red min
+$color-button-two: #ea2a40;
+$background-color-button-two: #f8faff;
+$border-button-two: solid 2px #ea2a40;
+$background-color-button-two-hover:#ea2a40;
+$color-button-two-hover: #f8faff;
+
+ %button-two {
+    border: $border-button-two;
+    color: $color-button-two;
+    background-color: $background-color-button-two;
+    &:hover {
+    background-color: $background-color-button-two-hover;
+    color: $color-button-two-hover;
+    }
+    }
+
+// blue min 
+$color-button-three: #356cff;
+$background-color-button-three: #ffffff;
+$border-button-three: solid 2px #356cff;
+$background-color-button-three-hover:#356cff;
+$color-button-three-hover: #ffffff;
+ %button-three {
+    border: $border-button-three;
+    color: $color-button-three;
+    background-color: $background-color-button-three;
+    &:hover {
+    background-color: $background-color-button-three-hover;
+    color: $color-button-three-hover;
+    }
+    }

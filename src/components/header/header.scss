@@ -7,7 +7,7 @@ header {
   top: 0;
   z-index: 2;
   width: 100%;
-  background-color: #ffffff;
+  background-color: $background-color-menu;
 }
 .principal-div-header {
   display: flex;
@@ -35,7 +35,7 @@ li {
 a {
   @extend %title-bold;
   text-decoration: none;
-  font-size: $font-menu-size;
+  font-size: $font-size-menu-desktop;
 }
 
 .active-link {

@@ -7,7 +7,7 @@
 .div-secondary-container-contact{
     @include grid-lg;
     display: grid;
-    grid-column: 1/span 12;
+    grid-column: $full-grid;
 }
 .main-container-h1-text-contact{
     grid-column: 3/ span 8;
@@ -23,19 +23,20 @@ form {
 }
 
 .main-container-form{
-    grid-column: 1/ span 12;
+    grid-column: $full-grid;
     display: flex;
 }
 
 .second-container-form{
-    grid-column: 1/ span 12;
+    grid-column: $full-grid;
 }
 .div-button-send{
-    grid-column: 1/ span 12;
+    grid-column: $full-grid;
     display: flex;
     flex-direction: row-reverse;
 }
-//
+
+// css
 
 .div-email,
 .div-subject-title{
@@ -46,12 +47,12 @@ form {
     margin-right: 20px;
 }
 .main-container-contact{
-    background-color: #f8faff;
+    background-color: $background-color;
     height: 100vh;
 }
 
 .main-title-contact {
-    font-size: 40px;
+    font-size: $font-size-title-h1-desktop;
 }
 
 .name-label {
@@ -61,7 +62,7 @@ form {
 }
 .paraph-contact {
     font-family: $font-paragraph;
-    font-size: 16px;
+    font-size: $font-size-paragraph-desktop;
     color: #2a2a2a;
     margin-top: 16px;
     margin-bottom: 48px;
@@ -122,7 +123,7 @@ form {
     .div-secondary-container-contact{
         @include grid-lg;
         display: grid;
-        grid-column: 1/span 12;
+        grid-column: $full-grid;
     }
     .main-container-h1-text-contact{
         grid-column: 2/ span 10;
@@ -130,7 +131,7 @@ form {
         text-align: center;
     }
     .formulaire-contact-div{
-        grid-column: 1/ span 12;
+        grid-column: $full-grid;
     }
     
     form {
@@ -138,10 +139,10 @@ form {
     }
     
     .second-container-form{
-        grid-column: 1/ span 12;
+        grid-column: $full-grid;
     }
     .div-button-send{
-        grid-column: 1/ span 12;
+        grid-column: $full-grid;
         display: flex;
         flex-direction: row-reverse;
     }

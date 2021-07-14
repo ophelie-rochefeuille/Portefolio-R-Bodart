@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import './skills.scss';
-import {ReactComponent as LogoUXDesign} from './ux-design.svg';
-import {ReactComponent as LogoUIDesign} from './ui-design.svg';
-import {ReactComponent as LogoFontEndDev} from './font-end-development.svg';
-import {ReactComponent as LogoProjectManagement} from './project-management.svg';
+import {ReactComponent as LogoUXDesign} from "../../pictures/ux-design.svg";
+import {ReactComponent as LogoUIDesign} from "../../pictures/ui-design.svg";
+import {ReactComponent as LogoFontEndDev} from "../../pictures/font-end-development.svg";
+import {ReactComponent as LogoProjectManagement} from "../../pictures/project-management.svg";
 import '../../components/variables.scss';
 import cv from '../../bodart.pdf';
 
@@ -69,7 +69,7 @@ export default class ProjectTitle extends Component {
                
             </div> 
             <div className='div-button-skills-resume'>
-            <a href={cv} target="_blank">  <input className='input-skills-resume' type='button' value='See Resume'></input></a>
+            <a href={cv} target="_blank" rel="noreferrer">  <input className='input-skills-resume' type='button' value='See Resume'></input></a>
     
             </div>
          </div>

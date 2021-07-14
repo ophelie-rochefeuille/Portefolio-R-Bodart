@@ -1,13 +1,12 @@
-@import "../buttons.scss";
 @import "../fonts.scss";
 @import "../../components/variables.scss";
 
 .container-skills {
   margin: 0;
-  background-color: #f8faff;
+  background-color: $background-color;
   width: 100%;
   h1 {
-    font-size: 40px;
+    font-size: $font-size-title-h1-desktop;
     font-family: $font-bold;
   }
 }
@@ -64,7 +63,7 @@
   max-width: 80%;
   h2 {
     font-family: $font-bold;
-    font-size: 32px;
+    font-size: $font-size-title-h2-desktop;
   }
 }
 
@@ -75,7 +74,7 @@
   padding-bottom: 80px;
 }
 .input-skills-resume {
-  @extend %button-red-white;
+  @extend %button-two;
 }
 
 
@@ -87,7 +86,7 @@
  .container-skills-top-right,
  .container-skills-bottom-left,
  .container-skills-bottom-right{
-   grid-column: 1/ span 12;
+   grid-column: $full-grid;
    width: 100%;
  }
 .container-skills-img {
@@ -106,7 +105,7 @@
   }
 }
 .skills-h1-title {
-  grid-column: 1/ span 12;
+  grid-column: $full-grid;
   margin: 0px;
   text-align: center;
 }

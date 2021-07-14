@@ -1,11 +1,12 @@
 @import '../fonts.scss';
 @import "../variables.scss";
 
-// premiere partie page about 
 
+// grids first part AboutPage
 .background-div-about{
-    background-color: #f8faff;
+    background-color: $background-color;
 }
+
 .container-about-hi {
     @include grid-lg;
     display: grid;
@@ -23,17 +24,18 @@
     grid-column: 6/ span 5;
 }
 
+// css 
 .name-h1-about{
-    font-size: 40px;
+    font-size: $font-size-title-h1-desktop;
 }
 
 .presentation-about{
     font-family: $font-paragraph;
-    font-size: 16px;
+    font-size: $font-size-paragraph-desktop;
 }
 
 
-//deuxieme partie page about
+// grids & css second part 
 
 .p-about-second-presentation-div{
     @include grid-lg;
@@ -83,7 +85,9 @@
 .hobbies-ul{
     padding-left: 20px;
 }
-// mobile et tablette 
+
+
+// mobile & tablette 
 
 @media (max-width: 500px) {
 
@@ -100,7 +104,7 @@
     }
     
     .bodartpng {
-        grid-column: 1/ span 12;
+        grid-column: $full-grid;
         width: 55%;
         margin-left: auto;
         margin-right: auto;
@@ -108,23 +112,21 @@
     }
     
     .div-presentation-about{
-        grid-column: 1/ span 12;
+        grid-column: $full-grid;
         width: 100%;
         text-align: center;
         margin: 0;
     }
     
     .name-h1-about{
-        font-size: 30px;
+        font-size: $font-size-title-h1-mobile;
     }
     
     .presentation-about{
         font-family: $font-paragraph;
-        font-size: 16px;
+        font-size: $font-size-paragraph-mobile;
     }
     
-    
-    //deuxieme partie page about
     
     .p-about-second-presentation-div{
         @include grid-lg;
@@ -132,7 +134,7 @@
     }
 
     .paragraph-second-presentation-about{
-        grid-column: 1/span 12;
+        grid-column: $full-grid;
         width: 100%;
         text-align: center;
         margin-bottom: 64px;
@@ -146,11 +148,11 @@
     }
 
     .hobbies-img{
-       grid-column: 1/span 12;
+       grid-column: $full-grid;
     }
     
     .h1-paraph-hobbies{
-        grid-column: 1/span 12;
+        grid-column: $full-grid;
         margin: 0px;
         h1 {
             font-size: 20px;
@@ -158,13 +160,13 @@
         }
         p{
             font-family: $font-paragraph;
-            font-size: 16px;
+            font-size: $font-size-paragraph-mobile;
             text-align: center;
         }
     }
     
     .hobbies-list {
-        font-size: 16px;
+        font-size: $font-size-paragraph-mobile;
         font-family: $font-paragraph;
         list-style-type: disc;
     }

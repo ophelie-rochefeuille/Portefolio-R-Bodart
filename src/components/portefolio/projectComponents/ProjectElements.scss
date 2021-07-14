@@ -10,7 +10,7 @@
 
 //main picture project
 .main_picture_background{ 
-    grid-column: 1/ span 12;
+    grid-column: $full-grid;
     width: 100%;
 }
 
@@ -28,21 +28,21 @@
 //titles
 .title-project-component{
     font-family: $font-bold;
-    font-size: 40px;
+    font-size: $font-size-title-h1-desktop;
     margin: 32px 0px 24px 0px;
 }
 
 //subtitles
 .subtitle-project-component{
     font-family: $font-bold;
-    font-size: 32px;
+    font-size: $font-size-title-h2-desktop;
     margin: 32px 0px 24px 0px;
 }
 
 //paragraphs + legends 
 .paragraph-project-component{
     font-family: $font-paragraph;
-    font-size: 16px;
+    font-size: $font-size-paragraph-desktop;
     text-align: justify;
     margin: 10px 0px;
 }
@@ -56,9 +56,52 @@
 
 .link-component{
     font-family: $font-paragraph;
-    font-size: 16px;
+    font-size: $font-size-paragraph-desktop;
 }
 
 Footer{
-    grid-column: 1/ span 12;
+    grid-column: $full-grid;
 }
+
+
+
+//média mobile
+
+@media (max-width: 500px) {
+    
+.main-div-project-page {
+    @include grid-lg;
+    display: grid;
+}
+
+//main picture project
+.main_picture_background{ 
+    grid-column: $full-grid;
+    width: 100%;
+}
+
+//component's contruction with grids
+.main_div_project_element{
+    grid-column: 2/ span 10;
+}
+
+// explanatony pictures 
+.explanatory_img{
+    width: 100%;
+    margin: 24px 0px 8px 0px;
+}
+
+//titles
+.title-project-component{
+    font-family: $font-bold;
+    font-size: $font-size-title-h1-mobile;
+    margin: 32px 0px 24px 0px;
+}
+
+//subtitles
+.subtitle-project-component{
+    font-family: $font-bold;
+    font-size: $font-size-title-h2-mobile;
+    margin: 32px 0px 24px 0px;
+}
+    }

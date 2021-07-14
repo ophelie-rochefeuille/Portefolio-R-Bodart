@@ -1,7 +1,7 @@
 import React  from 'react';
-import {ReactComponent as Made} from './path.svg';
-import {ReactComponent as Dribbble} from './dribble.svg';
-import {ReactComponent as Linkedin} from './linkedin.svg';
+import {ReactComponent as Made} from "../../pictures/path.svg";
+import {ReactComponent as Dribbble} from "../../pictures/dribble.svg";
+import {ReactComponent as Linkedin} from "../../pictures/linkedin.svg";
 import './footer.scss';
 
 
@@ -17,7 +17,7 @@ export default class HomePage extends React.Component {
 
                 <div className='social-network'>
                 <a href='https://dribbble.com/RaphaelBodart'><Dribbble className='social-network-logo dribble-logo' /></a>
-                <a href='https://fr.linkedin.com/in/raphael-bodart'><Linkedin className='social-network-logo linkedin-logo'  /></a>
+                <a href='https://fr.linkedin.com/in/raphael-bodart'><Linkedin className='social-network-logo linkedin-logo'/></a>
                 </div>
                 </div>
                 
