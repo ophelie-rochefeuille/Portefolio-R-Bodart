@@ -2,7 +2,6 @@
 @import '../../../variables/fonts.scss';
 
 .div-project-page{
-    max-width: 1440px;
     @include grid-lg;
     display: grid;
     margin-bottom: 100px;
@@ -10,7 +9,7 @@
 
 //main picture project
 .main_picture_background{ 
-    grid-column: $full-grid;
+    grid-column: 2/ span 10;
     width: 100%;
 }
 
@@ -69,9 +68,8 @@ Footer{
 
 @media (max-width: 500px) {
     
-.main-div-project-page {
-    @include grid-lg;
-    display: grid;
+.div-project-page {
+margin: 0;
 }
 
 //main picture project

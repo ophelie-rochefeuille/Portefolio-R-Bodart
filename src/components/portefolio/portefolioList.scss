@@ -33,14 +33,16 @@
   width: 100%;
   padding-left: 53px;
 }
-
+.main-div-portefolioList-project{
+   max-width: $max-width;  
+   margin-right: auto;
+  margin-left:auto;
+}
 .main-container-portefoliolist-project{
   @include grid-lg;
   display: grid;
-  max-width: $max-width;
   margin-top: 64px;
-  margin-right: auto;
-  margin-left: auto;
+
 }
 
 .a-project-element{

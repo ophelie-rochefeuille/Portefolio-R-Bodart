@@ -35,12 +35,14 @@ export default class PortefolioList extends Component {
                  </div>
                 </div>
                 </div>
+                <div className="main-div-portefolioList-project">
                 <div className='main-container-portefoliolist-project'>
                 { this.state.projects.map ((p, index) => (
                     <Link to={`/portefolio/${p.id}`} className="a-project-element">
                     <ProjectElement key={p.title + index} project={p} />
                     </Link>
                 ))}
+                </div>
                 </div>
             <Footer />
             </div>

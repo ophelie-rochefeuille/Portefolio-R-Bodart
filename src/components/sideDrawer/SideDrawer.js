@@ -7,8 +7,8 @@ const sideDrawer = props => (
         <ul className='main-container-list-menu-burger'>
             <li className="list-menu-burger"><NavLink to='/homePage'  activeClassName='active-link' className="menu-burger home-button" href="/" onClick={props.click}> Home </NavLink></li>
             <li className="list-menu-burger"><NavLink to='/portefolio'  activeClassName='active-link'  className="menu-burger portefolio-button" onClick={props.click}>Portefolio</NavLink></li>
-            <li className="list-menu-burger"><a activeClassName='active-link' className="menu-burger resume-button"href="/" onClick={props.click}>Resume</a></li>
-            <li className="list-menu-burger"><NavLink to='/about' activeClassName='active-link'  className="menu-burger about-button" onClick={props.click}>About</NavLink></li>
+            <li className="list-menu-burger"><a activeClassName='active-link' className="menu-burger resume-button"href="/" onClick={props.click}>CV</a></li>
+            <li className="list-menu-burger"><NavLink to='/about' activeClassName='active-link'  className="menu-burger about-button" onClick={props.click}>À propos</NavLink></li>
             <li className="list-menu-burger"><NavLink to='/contact' activeClassName='active-link' className="menu-burger contact-button" onClick={props.click}>Contact</NavLink></li>
         </ul>
     </nav>
