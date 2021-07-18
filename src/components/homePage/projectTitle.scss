@@ -1,6 +1,11 @@
-@import "../fonts.scss";
-@import '../variables.scss';
+@import '../../variables/fonts.scss';
+@import "../../variables/variables.scss";
 
+.main-div-project{
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
 .container-project{
   @include grid-lg;
   display: grid;

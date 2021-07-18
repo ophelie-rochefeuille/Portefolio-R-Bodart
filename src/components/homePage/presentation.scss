@@ -1,17 +1,19 @@
-@import "../fonts.scss";
-@import "../buttons.scss";
-@import '../variables.scss';
+@import '../../variables/fonts.scss';
+@import "../../variables/variables.scss";
 
 .container-principal-presentation-profil {
   max-width: 100%;
   height: 600px;
   display: flex;
+  justify-content: center;
   background-color: $background-color;
 }
 
 //grid 
 .secondary-container-presentation-profil {
   max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
   @include grid-lg;
   display: grid;
   align-items: center;
@@ -52,6 +54,8 @@
 .resume-button-presentation {
   @extend %button-two;
   margin-left: 24px;
+  min-width: 100px;
+  padding: 8px 45px;
 }
 
 .button-presentation {

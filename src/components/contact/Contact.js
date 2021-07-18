@@ -48,7 +48,7 @@ return(
       <div className="main-container-h1-text-contact">
         <div className='container-h1-text-contact'>
           <h1 className='main-title-contact'>Contact</h1>
-          <p className='paraph-contact'>Feel free to contact me for a project, an opportunity or anything else…</p>
+          <p className='paraph-contact'>N'hésitez pas à me contacter pour un projet, une opportunité ou autre...</p>
         </div>
       </div>
 
@@ -65,7 +65,7 @@ return(
 
 
             <div className='div-subject-title div-input-contact'>
-              <div className='name-label'>Subject</div>
+              <div className='name-label'>Sujet</div>
               <input type='text' name='subject' className='subject-input input-contact'
               onChange={(e) => setSubject(e.target.value)} value={subject} />
             </div>
@@ -75,18 +75,17 @@ return(
 
           <div className='second-container-form'>
             <div className='div-object-text div-input-contact'>
-              <div className='name-label'>Object</div>
+              <div className='name-label'>Contenu</div>
               <textarea name='object' className='object-input input-contact'
               onChange={(e) => setObject(e.target.value)} value={object} />
             </div>
           </div>
-
+          <div className='form-message-succes'></div>
           <div className='div-button-send'> 
-            <button className='button-send' onClick={handleSubmit} type='button' >Send</button>
+            <button className='button-send' onClick={handleSubmit} type='button' >Envoyer</button>
           </div>
 
           <div className='form-message'></div>
-          <div className='form-message-succes'></div>
         </form>
       </div>
     </div>

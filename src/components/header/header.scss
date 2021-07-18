@@ -1,5 +1,5 @@
-@import "../fonts";
-@import "../variables.scss";
+@import '../../variables/fonts.scss';
+@import "../../variables/variables.scss";
 
 header {
   position: sticky;
@@ -16,7 +16,6 @@ header {
   margin: 0px 25px;
   height: 64px;
   .inferior-div-header {
-    width: 40%;
     display: flex;
     justify-content: flex-end;
   }

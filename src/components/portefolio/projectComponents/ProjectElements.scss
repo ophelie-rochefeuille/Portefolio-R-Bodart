@@ -1,11 +1,11 @@
-@import '../../variables.scss';
-@import '../../fonts.scss';
+@import '../../../variables/variables.scss';
+@import '../../../variables/fonts.scss';
 
-.main-div-project-page {
+.div-project-page{
     max-width: 1440px;
     @include grid-lg;
     display: grid;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 //main picture project

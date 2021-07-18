@@ -19,8 +19,8 @@ export default class PortefolioList extends Component {
             <div className='container-about-hi'>
                  <img className='bodartpng' alt='Raphaël Bodart' src={bodartpng}  />
              <div className='div-presentation-about'>
-                 <h1 className='name-h1-about'>Hi, I'm Raphaël</h1>
-                 <p className='presentation-about'>If you’re here, it’s obvious that you want to learn a little bit more about me! I'll try to summarize who I am and what drive me.</p>
+                 <h1 className='name-h1-about'>Salut, moi c'est Raphaël 👋</h1>
+                 <p className='presentation-about'>Si vous êtes ici, c'est évident que vous voulez en savoir un peu plus sur moi ! Je vais essayer de résumer qui je suis et ce qui me motive.</p>
              </div>
             </div>
         </div>
@@ -29,7 +29,7 @@ export default class PortefolioList extends Component {
         <div className='container-about-hobbies'>
 
             <div className='p-about-second-presentation-div'>
-                <p className='paragraph-second-presentation-about'>Passionate about new technologies, for me my work is a passion. I love discovering new things and not restricting myself to a single sector of activity. (To rework)</p>
+                <p className='paragraph-second-presentation-about'>Passionné des nouvelles technologies, pour moi mon travail est une passion. J’adore découvrir de nouvelles choses et ne pas me restreindre à un seul secteur d’activité.</p>
             </div>
 
 
@@ -39,7 +39,7 @@ export default class PortefolioList extends Component {
 
                 <div className='h1-paraph-hobbies'>
                      <h1>Vision</h1>
-                     <p>I love when I need to go through a product, deploy a UX strategy and developpe it by iteration. (To rework)</p>
+                     <p>J'aime quand j'ai besoin de parcourir un produit, de déployer une stratégie UX et de le développer par itération. Pour moi un produit est un projet que l’on façonne avec le temps.</p>
                 </div>
             
             </div>
@@ -48,8 +48,8 @@ export default class PortefolioList extends Component {
                 <img alt='Company' className='hobbies-img' src={career} />
 
                 <div className='h1-paraph-hobbies'>
-                    <h1>Career</h1>
-                    <p>I have a master's degree of Art Direction and UX Design. Mostly worked in startup company. (to rework)</p> 
+                    <h1>Parcours</h1>
+                    <p>J'ai un master en direction artistique et design UX. J’ai principalement travaillé dans des start-ups early/middle stage où j’ai pu créer et améliorer des produits.</p> 
                 </div>
             </div>
 
@@ -60,10 +60,10 @@ export default class PortefolioList extends Component {
                 <div className='h1-paraph-hobbies'>
                     <h1>Hobbies</h1>
                     <ul className='hobbies-ul'>
-                        <li className='hobbies-list'>Climbing (bouldering) 🧗</li>
-                        <li className='hobbies-list'>Video Games (Dofus, WOW, CSS, etc.) 👾</li>
-                        <li className='hobbies-list'>Music (Rock, Metal, Electro Swing) 🤘</li>
-                        <li className='hobbies-list'>Travels (Tahiti, USA, Guyanna, etc.) 🌎</li>
+                        <li className='hobbies-list'>Escalade (en bloc) 🧗</li>
+                        <li className='hobbies-list'>Jeux Vidéos (Dofus, WOW, CSS, etc.) 👾</li>
+                        <li className='hobbies-list'>Musique (Rock, Metal, Electro Swing) 🤘</li>
+                        <li className='hobbies-list'>Voyages (Tahiti, USA, Guyanna, etc.) 🌎</li>
                     </ul>
                 </div>
             </div>

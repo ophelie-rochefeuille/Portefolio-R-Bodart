@@ -1,8 +1,5 @@
-@import "../fonts.scss";
-@import "../buttons.scss";
-@import "../variables.scss";
-
-
+@import '../../variables/fonts.scss';
+@import "../../variables/variables.scss";
 
 h2 {
   font-family: $font-regular;

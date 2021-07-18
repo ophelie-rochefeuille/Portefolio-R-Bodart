@@ -1,7 +1,4 @@
 
-.main-wrapper {
-    max-width: 1440px;
-}
 
 @mixin grid-lg {
     grid-template-columns: repeat(12, 1fr);
@@ -21,7 +18,7 @@
 
 
 $full-grid: 1/ span 12;
-$max-width: 1440px auto;
+$max-width: 1440px;
 // color 
 $background-color-menu: #ffffff;
 $background-color: #f8faff;
@@ -41,6 +38,8 @@ $font-size-paragraph-mobile: 16px;
 $font-size-footer-mobile: 12px;
 
 //font family 
+$font-color-base:#356cff;
+$font-color-hover: #ea2a40;
 $font-menu-color-hover: #ea2a40;
 $color-font-company: #ea2a40;
 $font-paragraph-bold: "notosans-bold";

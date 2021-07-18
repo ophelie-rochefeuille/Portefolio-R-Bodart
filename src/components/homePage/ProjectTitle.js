@@ -36,7 +36,7 @@ export default class ProjectTitle extends Component {
     borderRadius: '8px'};
 
         return (
-            <div>
+            <div className="main-div-project">
 
             <div className='container-project'>
                 <div className='container-box'>
@@ -49,7 +49,7 @@ export default class ProjectTitle extends Component {
                     <h1 className='title-class'>{descriptionLastProject.title}</h1>
                     <p className='paraph-project'>{descriptionLastProject.content}</p>
                     <div className='container-button-see-more'>
-                     <Link to={`/portefolio/${descriptionLastProject.id}`}><input type='button' value='See more' className="button-see-more" /></Link>
+                     <Link to={`/portefolio/${descriptionLastProject.id}`}><input type='button' value='Voir plus' className="button-see-more" /></Link>
         
                     </div>
                     
@@ -63,7 +63,7 @@ export default class ProjectTitle extends Component {
                     <h1 className='title-class'>{descriptionSecondLastProject.title}</h1>
                     <p className='paraph-project'>{descriptionSecondLastProject.content}</p>
                     <div className='container-button-see-more'>
-                    <Link to={`/portefolio/${descriptionSecondLastProject.id}`} ><input type='button' value='See more' className="button-see-more" /></Link>
+                    <Link to={`/portefolio/${descriptionSecondLastProject.id}`} ><input type='button' value='Voir plus' className="button-see-more" /></Link>
                     </div>
                     
                 </div>  

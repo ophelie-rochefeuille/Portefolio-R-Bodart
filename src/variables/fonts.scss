@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "quicksand-bold";
+  src: url("../components/fonts/Quicksand-Bold.woff2") format("woff2"),
+    url("../components/fonts/Quicksand-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "quicksand-regular";
+  src: url("../components/fonts/Quicksand-Regular.woff2") format("woff2"),
+    url("../components/fonts/Quicksand-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "quicksand-light";
+  src: url("../components/fonts/Quicksand-Light.woff2") format("woff2"),
+    url("../components/fonts/Quicksand-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "notosans-regular";
+  src: url("../components/fonts/NotoSans-Regular.woff2") format("woff2"),
+  url("../components/fonts/NotoSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "notosans-bold";
+  src: url("../components/fonts/NotoSans-Bold.woff2") format("woff2"),
+  url("../components/fonts/NotoSans-Bold.woff") format("woff");
+}
+
+$font-paragraph-bold: "notosans-bold";
+$font-paragraph: "notosans-regular";
+$font-regular: "quicksand-regular";
+$font-bold: "quicksand-bold";
+$font-light: "quicksand-light";
+
+%title-bold {
+  font-family: $font-bold;
+  color: #0c142b;
+}
+

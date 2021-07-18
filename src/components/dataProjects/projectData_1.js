@@ -54,7 +54,7 @@ let project_1 = [
 },
 {
     component: "explanatory_img",
-    explanatory_img: process.env.PUBLIC_URL + '/pictures/img_replace.png'
+    explanatory_img: process.env.PUBLIC_URL + '/pictures/explanatory_img_b2b_2.png'
 },
 {
     component: "explanatory_legend",
@@ -68,7 +68,7 @@ let project_1 = [
 },
 {
     component: "explanatory_img",
-    explanatory_img: process.env.PUBLIC_URL + '/pictures/img_replace.png'
+    explanatory_img: process.env.PUBLIC_URL + '/pictures/explanatory_img_b2b_3.png'
 },
 {
     component: "explanatory_legend",
@@ -101,7 +101,7 @@ let project_1 = [
 },
 {
     component: "explanatory_img",
-    explanatory_img: process.env.PUBLIC_URL + '/pictures/img_replace.png'
+    explanatory_img: process.env.PUBLIC_URL + '/pictures/explanatory_img_b2b_4.png'
 },
 {
     component: "explanatory_legend",

@@ -1,10 +1,12 @@
-@import "../fonts.scss";
-@import "../../components/variables.scss";
+@import '../../variables/fonts.scss';
+@import "../../variables/variables.scss";
 
 .container-skills {
   margin: 0;
   background-color: $background-color;
   width: 100%;
+  display: flex;
+  justify-content: center;
   h1 {
     font-size: $font-size-title-h1-desktop;
     font-family: $font-bold;

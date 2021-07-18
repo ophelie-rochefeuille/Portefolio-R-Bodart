@@ -7,7 +7,9 @@
     import Components from "./components";
     import "../portefolio/projectComponents/ProjectElements.scss";
     import Footer from "../footer/Footer";
+    import dataProject from "../dataProjects/data";
     
+    const project = dataProject[dataProject.length - 1];
     
     const ProjectPage = () => { 
     
@@ -18,28 +20,37 @@
         if(id === "1") {
             return(
                 <div className="main-div-project-page">
-                {projectData_1.map(block => Components(block))}
+                  <div className="div-project-page">
+                     {projectData_1.map(block => Components(block))}
+                  </div>
+                   
                 <Footer />
               </div>  
             )
         } else if (id === "2") {
             return (
                 <div className="main-div-project-page">
+                  <div className="div-project-page">
                 {projectData_2.map(block => Components(block))}
+                </div>
                 <Footer />
               </div> 
             )
         } else if (id === "3") {
           return (
               <div className="main-div-project-page">
+                <div className="div-project-page">
               {projectData_3.map(block => Components(block))}
+              </div>
               <Footer />
             </div> 
           )
       } else if (id === "4") {
         return (
             <div className="main-div-project-page">
+              <div className="div-project-page">
             {projectData_4.map(block => Components(block))}
+            </div>
             <Footer className='footer' />
           </div> 
         )

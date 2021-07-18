@@ -20,8 +20,8 @@ export default class Header extends Component {
 
                     <NavLink to='/homePage'  activeClassName='active-link' className="menu menu-pc home-button" href="/"> Home </NavLink>
                     <NavLink to='/portefolio'  activeClassName='active-link'  className="menu menu-pc portefolio-button">Portefolio</NavLink>
-                    <a href={cv} target="_blank" rel="noreferrer" activeClassName='active-link' className="menu menu-pc resume-button">Resume</a>
-                    <NavLink to='/about' activeClassName='active-link'  className="menu menu-pc about-button">About</NavLink>
+                    <a href={cv} target="_blank" rel="noreferrer" activeClassName='active-link' className="menu menu-pc resume-button">CV</a>
+                    <NavLink to='/about' activeClassName='active-link'  className="menu menu-pc about-button">À propos</NavLink>
                     <NavLink to='/contact' activeClassName='active-link' className="menu menu-pc contact-button">Contact</NavLink>
                 </div>
 

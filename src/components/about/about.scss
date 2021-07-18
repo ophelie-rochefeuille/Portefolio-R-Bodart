@@ -1,5 +1,5 @@
-@import '../fonts.scss';
-@import "../variables.scss";
+@import '../../variables/fonts.scss';
+@import "../../variables/variables.scss";
 
 
 // grids first part AboutPage
@@ -11,8 +11,10 @@
     @include grid-lg;
     display: grid;
     height: 600px;
-    max-width: $max-width;
     align-items: center;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bodartpng {
@@ -37,6 +39,11 @@
 
 // grids & css second part 
 
+.container-about-hobbies{
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
 .p-about-second-presentation-div{
     @include grid-lg;
     display: grid;

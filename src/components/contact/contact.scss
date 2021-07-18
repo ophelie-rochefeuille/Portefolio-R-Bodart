@@ -1,7 +1,5 @@
-@import "../fonts.scss";
-@import "../buttons.scss";
-@import "../variables.scss";
-
+@import '../../variables/fonts.scss';
+@import "../../variables/variables.scss";
 //grid
 
 .div-secondary-container-contact{
@@ -109,8 +107,10 @@ form {
 
 .form-message,
 .form-message-succes{
+    grid-column: 1/ span 12;
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
+    color: $font-color-base;
     font-family: $font-regular;
     margin-top: 20px;
 }

@@ -4,7 +4,7 @@ import {ReactComponent as LogoUXDesign} from "../../pictures/ux-design.svg";
 import {ReactComponent as LogoUIDesign} from "../../pictures/ui-design.svg";
 import {ReactComponent as LogoFontEndDev} from "../../pictures/font-end-development.svg";
 import {ReactComponent as LogoProjectManagement} from "../../pictures/project-management.svg";
-import '../../components/variables.scss';
+import "../../variables/variables.scss";
 import cv from '../../bodart.pdf';
 
 export default class ProjectTitle extends Component {
@@ -12,9 +12,9 @@ export default class ProjectTitle extends Component {
     render () {
 
         return (
-            <div>
-
             <div className='container-skills'>
+
+            <div className='container-skills-secondary'>
 
               <h1 className='skills-h1-title'>Skills</h1>
 
@@ -28,7 +28,7 @@ export default class ProjectTitle extends Component {
                     </div>
                         <div className='div-skills-details ux-design'>
                             <h2 className='h2-skills'>UX Design</h2>
-                            <p className='p-skills'>At home, we rely on our desktops and notebooks to do our shopping, to entertain us, and to keep us abreast of world events. We may not see our email servers, but we count on them to deliver our email whenever and wherever we want it.</p>
+                            <p className='p-skills'>Tests avec les Utilisateurs, Audit et autres méthodologies sans utilisateur, Conception d’interfaces, Zonings & wireframes, Méthodologies UX (persona, scénario d’usage), Conception d’expériences utilisateurs.</p>
                          </div>
                     </div>
                    
@@ -38,7 +38,7 @@ export default class ProjectTitle extends Component {
                     </div>
                     <div className='div-skills-details ui-design'>
                         <h2 className='h2-skills'>UI design</h2>
-                        <p className='p-skills'>Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner cartridge market. The market today is approximately a twenty billion dollar business.</p>
+                        <p className='p-skills'>Conception de logotypes, Création d’interfaces mobile et web, Conception et réalisation d’une charte graphique, Conception et maintenabilité d’un Design System.</p>
                     </div>
                     </div>
                    
@@ -53,7 +53,7 @@ export default class ProjectTitle extends Component {
                  </div>
                     <div className='div-skills-details front-end-development'>
                             <h2 className='h2-skills'>Front-End Development</h2>
-                            <p className='p-skills'>Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization.</p>
+                            <p className='p-skills'>Intégration HTML5 / CSS3, Développement JavaScript (React, JS Vanilla), C / C++, Conception et développement d’un UIKit en lien avec le Design System côté design.</p>
                         </div>
                 </div>
 
@@ -63,13 +63,13 @@ export default class ProjectTitle extends Component {
                  </div>
                     <div className='div-skills-details project-managment'>
                         <h2 className='h2-skills'>Project Managment</h2>
-                        <p className='p-skills'>If you are in the market for a computer, there are a number of factors to consider. Will it be used for your home, your office or perhaps even your home office combo?</p>
+                        <p className='p-skills'>Planification, Gestion des ressources, LEAN & Agile, Management/Recrutement, Conception de cahiers des charges.</p>
                     </div>
                     </div>
                
             </div> 
             <div className='div-button-skills-resume'>
-            <a href={cv} target="_blank" rel="noreferrer">  <input className='input-skills-resume' type='button' value='See Resume'></input></a>
+            <a href={cv} target="_blank" rel="noreferrer">  <input className='input-skills-resume' type='button' value='Voir le CV'></input></a>
     
             </div>
          </div>
