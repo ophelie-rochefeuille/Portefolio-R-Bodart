@@ -1,8 +1,7 @@
 import React, { useState } from "react";
+import { string } from "yup";
 import './contact.scss';
 
-
-  
 
 
 const Contact = () => { 
@@ -11,15 +10,22 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [object, setObject] = useState("");
 
+  const responseError= "veuillez changer";
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (email && subject && object) {
     sendFeedback("template_zcwsm5k", {
       email,
       subject,
       object
     });
-  };
+  } else {
+    return (
+   console.log('error')
+    )
+  }
+};
 
   const sendFeedback = (templateId, variables) => {
 
@@ -93,3 +99,8 @@ return(
 )}
 
 export default Contact;
+
+
+
+
+

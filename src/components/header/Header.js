@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import {ReactComponent as LogoBodart} from "../../pictures/logobodart.svg";
 import './header.scss';
 import BurgerButton from '../sideDrawer/BurgerButton';
-import cv from "../../bodart.pdf";
+import cv from "../../Bodart_raphael_CV.pdf";
 
 
 
@@ -19,7 +19,7 @@ export default class Header extends Component {
                 <div className="inferior-div-header">
 
                     <NavLink to='/homePage'  activeClassName='active-link' className="menu menu-pc home-button" href="/"> Home </NavLink>
-                    <NavLink to='/portefolio'  activeClassName='active-link'  className="menu menu-pc portefolio-button">Portefolio</NavLink>
+                    <NavLink to='/portfolio'  activeClassName='active-link'  className="menu menu-pc portefolio-button">Portfolio</NavLink>
                     <a href={cv} target="_blank" rel="noreferrer" activeClassName='active-link' className="menu menu-pc resume-button">CV</a>
                     <NavLink to='/about' activeClassName='active-link'  className="menu menu-pc about-button">À propos</NavLink>
                     <NavLink to='/contact' activeClassName='active-link' className="menu menu-pc contact-button">Contact</NavLink>

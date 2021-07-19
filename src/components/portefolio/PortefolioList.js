@@ -30,7 +30,7 @@ export default class PortefolioList extends Component {
                  </div>
 
                  <div className='div-h-p-portefolioList'>
-                    <h1 className='portefolio-title-portefolioList'>Portefolio</h1>
+                    <h1 className='portefolio-title-portefolioList'>Portfolio</h1>
                     <p className='paragraph-portefoliolist-first-part'>Voici une partie de mes travaux où vous verrez mes compétences, le processus de livraison de projets complexes et aussi quelques projets plus légers.</p>
                  </div>
                 </div>

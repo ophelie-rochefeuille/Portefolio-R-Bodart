@@ -5,7 +5,7 @@ import {ReactComponent as LogoUIDesign} from "../../pictures/ui-design.svg";
 import {ReactComponent as LogoFontEndDev} from "../../pictures/font-end-development.svg";
 import {ReactComponent as LogoProjectManagement} from "../../pictures/project-management.svg";
 import "../../variables/variables.scss";
-import cv from '../../bodart.pdf';
+import cv from '../../Bodart_raphael_CV.pdf';
 
 export default class ProjectTitle extends Component {
 

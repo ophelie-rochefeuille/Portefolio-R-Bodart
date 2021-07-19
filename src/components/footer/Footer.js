@@ -16,8 +16,8 @@ export default class HomePage extends React.Component {
                 </div>
 
                 <div className='social-network'>
-                <a href='https://dribbble.com/RaphaelBodart'><Dribbble className='social-network-logo dribble-logo' /></a>
-                <a href='https://fr.linkedin.com/in/raphael-bodart'><Linkedin className='social-network-logo linkedin-logo'/></a>
+                <a href='https://dribbble.com/RaphaelBodart' target="_blank"><Dribbble className='social-network-logo dribble-logo' /></a>
+                <a href='https://fr.linkedin.com/in/raphael-bodart' target="_blank"><Linkedin className='social-network-logo linkedin-logo'/></a>
                 </div>
                 </div>
                 

@@ -49,7 +49,7 @@ render () {
         <div className='main-wrapper'>
           <Switch>
         <Route path="/homePage" component={HomePage} />
-        <Route path="/portefolio" exact component={PortefolioList} />
+        <Route path="/portfolio" exact component={PortefolioList} />
         <Route path='/about' component={About}  />
         <Route path='/contact' component={Contact}  />
         <Route path='/portefolio/:id' component={ProjectPage}  />
